@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="C:\Users\ashra\OneDrive\Desktop\vac\final.css">
+</head>
+<body>
+
+<p id="index">Select an index:</p>
+<button onclick="displayElement(1)">H</button>
+<button onclick="displayElement(2)">He</button>
+<button onclick="displayElement(3)">Li</button>
+<button onclick="displayElement(4)">Be</button>
+<button onclick="displayElement(5)">Bo</button>
+
+<p id="result"></p>
+
+<script>
+let x = ['H', 'He', 'Li', 'Be', 'Bo'];
+
+function displayElement(index) {
+  document.getElementById("result").innerHTML = "Element is: " + x[index+1];
+}
+</script>
+
+<div class="atom">
+<div id="master">
+        <h1>ATOM</h1>
+    <canvas id="atomCanvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('atomCanvas');
+        const context = canvas.getContext('2d');
+        let centerX, centerY;
+        const canvasWidthPercentage = 0.2; // 20% of screen width
+        const canvasHeightPercentage = 0.4; // 40% of screen height
+
+        function updateCanvasSize() {
+            canvas.width = window.innerWidth * canvasWidthPercentage;
+            canvas.height = window.innerHeight * canvasHeightPercentage;
+            centerX = canvas.width / 2;
+            centerY = canvas.height / 2;
+        }
+
+        const baseRadius = 80 * canvasWidthPercentage; // Scale base radius
+        const ringWidth = 4 * canvasWidthPercentage; // Scale ring width
+        const electronRadius = 7 * canvasWidthPercentage; // Scale electron radius
+        const nucleusRadius = 70 * canvasWidthPercentage; // Scale nucleus radius
+        const protonRadius = 12 * canvasWidthPercentage; // Scale proton radius
+        const neutronRadius = 12 * canvasWidthPercentage; // Scale neutron radius
+        const numOrbits = 7;
+        const numElectrons = [2, 8, 18, 32, 32, 18, 8];
+        const orbitSpeeds = [0.02, 0.015, 0.01, 0.007, 0.007, 0.01, 0.015];
+        let angles = Array(numOrbits).fill(0);
+        const numProtons = 118;
+        const numNeutrons = 176;
+        const protonColor = 'rgba(255, 0, 0, 0.8)'; // Semi-transparent red
+        const neutronColor = 'rgba(0, 0, 255, 0.8)'; // Semi-transparent blue
+
+        function generateRandomPoints(numPoints, radius) {
+            const points = [];
+            for (let i = 0; i < numPoints; i++) {
+                const theta = Math.random() * 2 * Math.PI;
+                const phi = Math.acos(2 * Math.random() - 1);
+                const x = radius * Math.sin(phi) * Math.cos(theta);
+                const y = radius * Math.sin(phi) * Math.sin(theta);
+                const z = radius * Math.cos(phi);
+                points.push({ x, y, z });
+            }
+            return points;
+        }
+
+        function project3DTo2D(x, y, z) {
+            const scale = 200 / (200 + z);
+            return { x: centerX + x * scale, y: centerY - y * scale };
+        }
+
+        function drawCircle(context, x, y, radius, color, filled = false) {
+            context.beginPath();
+            context.arc(x, y, radius, 0, 2 * Math.PI);
+            context.fillStyle = filled ? color : 'transparent';
+            context.strokeStyle = !filled ? color : 'transparent';
+            context.lineWidth = filled ? 0 : 1;
+            context.shadowBlur = 8;
+            context.shadowColor = color;
+            context.fill();
+            context.stroke();
+            context.shadowBlur = 0; // Reset shadow
+        }
+
+        function drawElectron(x, y) {
+            drawCircle(context, x, y, electronRadius, 'black', true);
+        }
+
+        function drawNucleus() {
+            const protons = generateRandomPoints(numProtons, nucleusRadius);
+            const neutrons = generateRandomPoints(numNeutrons, nucleusRadius);
+
+            protons.forEach(({ x, y, z }) => {
+                const { x: x2D, y: y2D } = project3DTo2D(x, y, z);
+                drawCircle(context, x2D, y2D, protonRadius, protonColor, true);
+            });
+
+            neutrons.forEach(({ x, y, z }) => {
+                const { x: x2D, y: y2D } = project3DTo2D(x, y, z);
+                drawCircle(context, x2D, y2D, neutronRadius, neutronColor, true);
+            });
+        }
+
+        function drawOrbits() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < numOrbits; i++) {
+                const radius = baseRadius + i * 100 * canvasWidthPercentage; // Adjust radius for scaling
+                drawCircle(context, centerX, centerY, radius, 'rgba(0, 0, 255, 0.5)', false, ringWidth); // Semi-transparent blue for orbits
+
+                for (let j = 0; j < numElectrons[i]; j++) {
+                    const angle = angles[i] + (j / numElectrons[i]) * 2 * Math.PI;
+                    const x = centerX + radius * Math.cos(angle);
+                    const y = centerY + radius * Math.sin(angle);
+                    drawElectron(x, y);
+                }
+
+                angles[i] += orbitSpeeds[i];
+            }
+
+            drawNucleus();
+            requestAnimationFrame(drawOrbits);
+        }
+
+        window.onload = function() {
+            updateCanvasSize();
+            requestAnimationFrame(drawOrbits);
+        };
+
+        window.addEventListener('resize', () => {
+            updateCanvasSize();
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            drawOrbits();
+        });
+    </script>
+
+</div>
+</div>
+
+</body>
+</html>

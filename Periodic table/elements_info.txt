@@ -1,0 +1,2656 @@
+element_symbols = [
+    "H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne",
+    "Na", "Mg", "Al", "Si", "P", "S", "Cl", "Ar", "K", "Ca",
+    "Sc", "Ti", "V", "Cr", "Mn", "Fe", "Co", "Ni", "Cu", "Zn",
+    "Ga", "Ge", "As", "Se", "Br", "Kr", "Rb", "Sr", "Y", "Zr",
+    "Nb", "Mo", "Tc", "Ru", "Rh", "Pd", "Ag", "Cd", "In", "Sn",
+    "Sb", "Te", "I", "Xe", "Cs", "Ba", "La", "Ce", "Pr", "Nd",
+    "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb",
+    "Lu", "Hf", "Ta", "W", "Re", "Os", "Ir", "Pt", "Au", "Hg",
+    "Tl", "Pb", "Bi", "Po", "At", "Rn", "Fr", "Ra", "Ac", "Th",
+    "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm",
+    "Md", "No", "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds",
+    "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"
+]
+
+
+octet_configurations = [
+    "1s1", "1s2", "[He]", "1s2 2s1", "1s2 2s2", "1s2 2s2 2p1", "1s2 2s2 2p2", "1s2 2s2 2p3", "1s2 2s2 2p4", "1s2 2s2 2p5",
+    "1s2 2s2 2p6", "1s2 2s2 2p6 3s1", "1s2 2s2 2p6 3s2", "[Ne]", "1s2 2s2 2p6 3s2 3p1", "1s2 2s2 2p6 3s2 3p2", "1s2 2s2 2p6 3s2 3p3", "1s2 2s2 2p6 3s2 3p4", "1s2 2s2 2p6 3s2 3p5", "1s2 2s2 2p6 3s2 3p6",
+    "1s2 2s2 2p6 3s2 3p6 4s1", "1s2 2s2 2p6 3s2 3p6 4s2", "[Ar]", "1s2 2s2 2p6 3s2 3p6 4s2 3d1", "1s2 2s2 2p6 3s2 3p6 4s2 3d2", "1s2 2s2 2p6 3s2 3p6 4s2 3d3", "1s2 2s2 2p6 3s2 3p6 4s2 3d5", "1s2 2s2 2p6 3s2 3p6 4s2 3d5",
+    "1s2 2s2 2p6 3s2 3p6 4s2 3d6", "1s2 2s2 2p6 3s2 3p6 4s2 3d7", "1s2 2s2 2p6 3s2 3p6 4s2 3d8", "1s2 2s2 2p6 3s2 3p6 4s2 3d10", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p1", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p2", "[Kr]",
+    "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p3", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p4", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p5", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s1", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2", "[Xe]",
+    "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d1", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d2", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d3", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d4", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d5", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d6", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d7", "[Cs]",
+    "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d8", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d9", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p1", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p2", "[Ba]",
+    "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p3", "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p4", "1s2 
+
+subshell_configurations = [
+    "1s1", "1s2", "1s2 2s1", "1s2 2s2", "1s2 2s2 2p1", "1s2 2s2 2p2", "1s2 2s2 2p3", "1s2 2s2 2p4", "1s2 2s2 2p5", "1s2 2s2 2p6",
+    "1s2 2s2 2p6 3s1", "1s2 2s2 2p6 3s2", "1s2 2s2 2p6 3s2 3p1", "1s2 2s2 2p6 3s2 3p2", "1s2 2s2 2p6 3s2 3p3", "1s2 2s2 2p6 3s2 3p4", "1s2 2s2 2p6 3s2 3p5", "1s2 2s2 2p6 3s2 3p6", "1s2 2s2 2p6 3s2 3p6 4s1", "1s2 2s2 2p6 3s2 3p6 4s2",
+    "1s2 2s2 2p6 3s2 3p6 3d1", "1s2 2s2 2p6 3s2 3p6 3d2", "1s2 2s2 2p6 3s2 3p6 3d3", "1s2 2s2 2p6 3s2 3p6 3d5", "1s2 2s2 2p6 3s2 3p6 3d5", "1s2 2s2 2p6 3s2 3p6 3d6", "1s2 2s2 2p6 3s2 3p6 3d7", "1s2 2s2 2p6 3s2 3p6 3d8",
+    "1s2 2s2 2p6 3s2 3p6 3d10", "1s2 2s2 2p6 3s2 3p6 3d10 4s1", "1s2 2s2 2p6 3s2 3p6 3d10 4s2", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p1", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p2", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p3", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p4",
+    "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p5", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s1", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p1", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p2",
+    "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p3", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p4", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p5", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6 6s1",
+    "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6 6s2", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6 4f1", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6 4f2", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6 4f3", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6 4f4",
+    "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6 4f5", "1s2 2s2 2p6 3s2 3p6 3d10 4s2 4p6 5s2 5p6 4f6", "1s2 2s2 2p6
+
+
+state_at_room_temp = [
+    "Gas", "Gas", "Solid", "Solid", "Solid",
+    "Solid", "Gas", "Gas", "Gas", "Gas",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Gas", "Gas", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Gas", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Gas", "Gas", "Gas",
+    "Gas", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid",
+    "Solid", "Solid", "Solid", "Solid", "Solid"
+]
+
+
+valency = [
+    (1, 1), (2, 0), (3, 1), (4, 2), (5, 3),
+    (6, 4), (7, -3), (8, -2), (9, -1), (10, 0),
+    (11, 1), (12, 2), (13, 3), (14, 4), (15, -3),
+    (16, -2), (17, -1), (18, 0), (19, 1), (20, 2),
+    (21, 3), (22, 4), (23, 3), (24, 2), (25, 3),
+    (26, 2), (27, 3), (28, 2), (29, 1), (30, 2),
+    (31, 3), (32, 4), (33, -3), (34, -2), (35, -1),
+    (36, 0), (37, 1), (38, 2), (39, 3), (40, 4),
+    (41, 3), (42, 4), (43, 3), (44, 2), (45, 1),
+    (46, 2), (47, 1), (48, 2), (49, 3), (50, 4),
+    (51, -3), (52, -2), (53, -1), (54, 0), (55, 1),
+    (56, 2), (57, 3), (58, 3), (59, 3), (60, 2),
+    (61, 3), (62, 4), (63, 3), (64, 4), (65, 4),
+    (66, 4), (67, 3), (68, 2), (69, 3), (70, 4),
+    (71, 3), (72, 2), (73, 3), (74, 2), (75, 3),
+    (76, 2), (77, 1), (78, 2), (79, 1), (80, 2),
+    (81, 3), (82, 4), (83, 3), (84, 2), (85, -1),
+    (86, 0), (87, 1), (88, 2), (89, 3), (90, 3),
+    (91, 4), (92, 4), (93, 3), (94, 4), (95, 3),
+    (96, 4), (97, 3), (98, 2), (99, 3), (100, 2),
+    (101, 3), (102, 2), (103, 3), (104, 2), (105, 1),
+    (106, 2), (107, 1), (108, 2), (109, 1), (110, 2),
+    (111, 3), (112, 2), (113, 3), (114, 4), (115, 3),
+    (116, 2), (117, 1), (118, 0)
+]
+
+
+isotopes = [
+    (1, ['H1']), 
+    (2, ['He4']),
+    (3, ['Li6', 'Li7']),
+    (4, ['Be9']),
+    (5, ['B10', 'B11']),
+    (6, ['C12', 'C13', 'C14']),
+    (7, ['N14', 'N15']),
+    (8, ['O16', 'O17', 'O18']),
+    (9, ['F19']),
+    (10, ['Ne20', 'Ne21', 'Ne22']),
+    (11, ['Na23']),
+    (12, ['Mg24', 'Mg25', 'Mg26']),
+    (13, ['Al27']),
+    (14, ['Si28', 'Si29', 'Si30']),
+    (15, ['P31']),
+    (16, ['S32', 'S33', 'S34', 'S36']),
+    (17, ['Cl35', 'Cl37']),
+    (18, ['Ar36', 'Ar38', 'Ar40']),
+    (19, ['K39', 'K40', 'K41']),
+    (20, ['Ca40', 'Ca42', 'Ca43', 'Ca44', 'Ca46', 'Ca48']),
+    (21, ['Sc45']),
+    (22, ['Ti46', 'Ti47', 'Ti48', 'Ti49', 'Ti50']),
+    (23, ['V50', 'V51']),
+    (24, ['Cr50', 'Cr52', 'Cr53', 'Cr54']),
+    (25, ['Mn55']),
+    (26, ['Fe54', 'Fe56', 'Fe57', 'Fe58']),
+    (27, ['Co59']),
+    (28, ['Ni58', 'Ni60', 'Ni61', 'Ni62', 'Ni64']),
+    (29, ['Cu63', 'Cu65']),
+    (30, ['Zn64', 'Zn66', 'Zn67', 'Zn68', 'Zn70']),
+    (31, ['Ga69', 'Ga71']),
+    (32, ['Ge70', 'Ge72', 'Ge73', 'Ge74', 'Ge76']),
+    (33, ['As75']),
+    (34, ['Se74', 'Se76', 'Se77', 'Se78', 'Se80', 'Se82']),
+    (35, ['Br79', 'Br81']),
+    (36, ['Kr78', 'Kr80', 'Kr82', 'Kr83', 'Kr84', 'Kr86']),
+    (37, ['Rb85', 'Rb87']),
+    (38, ['Sr84', 'Sr86', 'Sr87', 'Sr88']),
+    (39, ['Y89']),
+    (40, ['Zr90', 'Zr91', 'Zr92', 'Zr94', 'Zr96']),
+    (41, ['Nb93']),
+    (42, ['Mo92', 'Mo94', 'Mo95', 'Mo96', 'Mo97', 'Mo98', 'Mo100']),
+    (43, ['Tc98']),
+    (44, ['Ru96', 'Ru98', 'Ru99', 'Ru100', 'Ru101', 'Ru102', 'Ru104']),
+    (45, ['Rh103']),
+    (46, ['Pd102', 'Pd104', 'Pd105', 'Pd106', 'Pd108', 'Pd110']),
+    (47, ['Ag107', 'Ag109']),
+    (48, ['Cd106', 'Cd108', 'Cd110', 'Cd111', 'Cd112', 'Cd113', 'Cd114', 'Cd116']),
+    (49, ['In113', 'In115']),
+    (50, ['Sn112', 'Sn114', 'Sn115', 'Sn116', 'Sn117', 'Sn118', 'Sn119', 'Sn120', 'Sn122', 'Sn124']),
+    (51, ['Sb121', 'Sb123']),
+    (52, ['Te120', 'Te122', 'Te123', 'Te124', 'Te125', 'Te126']),
+    (53, ['I127']),
+    (54, ['Xe124', 'Xe126', 'Xe128', 'Xe129', 'Xe130', 'Xe131', 'Xe132', 'Xe134', 'Xe136']),
+    (55, ['Cs133']),
+    (56, ['Ba130', 'Ba132', 'Ba134', 'Ba135', 'Ba136', 'Ba137', 'Ba138']),
+    (57, ['La138', 'La139']),
+    (58, ['Ce136', 'Ce138', 'Ce140', 'Ce142']),
+    (59, ['Pr141']),
+    (60, ['Nd142', 'Nd143', 'Nd144', 'Nd145', 'Nd146', 'Nd148', 'Nd150']),
+    (61, ['Pm145']),
+    (62, ['Sm144', 'Sm147', 'Sm148', 'Sm149', 'Sm150', 'Sm152', 'Sm154']),
+    (63, ['Eu151', 'Eu153']),
+    (64, ['Gd152', 'Gd154', 'Gd155', 'Gd156', 'Gd157', 'Gd158', 'Gd160']),
+    (65, ['Tb159']),
+    (66, ['Dy156', 'Dy158', 'Dy160', 'Dy161', 'Dy162', 'Dy163', 'Dy164']),
+    (67, ['Ho165']),
+    (68, ['Er162', 'Er164', 'Er166', 'Er167', 'Er168', 'Er170']),
+    (69, ['Tm169']),
+    (70, ['Yb168', 'Yb170', 'Yb171', 'Yb172', 'Yb173', 'Yb174', 'Yb176']),
+    (71, ['Lu175', 'Lu176']),
+    (72, ['Hf174', 'Hf176', 'Hf177', 'Hf178', 'Hf179', 'Hf180']),
+    (73, ['Ta180', 'Ta181']),
+    (74, ['W180', 'W182', 'W183', 'W184', 'W186']),
+    (75, ['Re185', 'Re187']),
+    (76, ['Os184', 'Os186', 'Os187', 'Os188', 'Os189', 'Os190', 'Os192']),
+    (77, ['Ir191', 'Ir193']),
+    (78, ['Pt190', 'Pt192', 'Pt194', 'Pt195', 'Pt196', 'Pt198']),
+    (79, ['Au197']),
+    (80, ['Hg196', 'Hg198', 'Hg199', 'Hg200', 'Hg201', 'Hg202', 'Hg204']),
+    (81, ['Tl203', 'Tl205']),
+    (82, ['Pb204', 'Pb206', 'Pb207', 'Pb208']),
+    (83, ['Bi209']),
+    (84, ['Po209', 'Po210', 'Po211', 'Po212', 'Po213', 'Po214']),
+    (85, ['At210', 'At211', 'At212', 'At213', 'At214']),
+    (86, ['Rn211', 'Rn220', 'Rn222']),
+    (87, ['Fr223']),
+    (88, ['Ra223', 'Ra224', 'Ra226', 'Ra228']),
+    (89, ['Ac227']),
+    (90, ['Th227', 'Th228', 'Th229', 'Th230', 'Th232']),
+    (91, ['Pa231']),
+    (92, ['U232', 'U233', 'U234', 'U235', 'U236', 'U238']),
+    (93, ['Np237']),
+    (94, ['Pu239', 'Pu240', 'Pu241', 'Pu242']),
+    (95, ['Am241', 'Am243']),
+    (96, ['Cm243', 'Cm244', 'Cm245', 'Cm246', 'Cm247', 'Cm248']),
+    (97, ['Bk247', 'Bk249']),
+    (98, ['Cf249', 'Cf251']),
+    (99, ['Es252']),
+    (100, ['Fm257']),
+    (101, ['Md258']),
+    (102, ['No259']),
+    (103, ['Lr262']),
+    (104, ['Rf261']),
+    (105, ['Db262']),
+    (106, ['Sg266']),
+    (107, ['Bh264']),
+    (108, ['Hs269']),
+    (109, ['Mt268']),
+    (110, ['Ds271']),
+    (111, ['Rg272']),
+    (112, ['Cn285']),
+    (113, ['Nh284']),
+    (114, ['Fl289']),
+    (115, ['Mc288']),
+    (116, ['Lv293']),
+    (117, ['Ts294']),
+    (118, ['Og294'])
+]
+
+
+neutrons_of_elements = [
+    0, 2, 4, 5, 6, 6, 7, 8, 10, 10, 12, 12, 14, 14, 16, 16, 16, 18, 20, 20, 22, 22, 24, 24, 26, 28, 30,
+    30, 32, 32, 34, 34, 36, 36, 38, 38, 40, 42, 44, 45, 46, 48, 50, 50, 52, 52, 54, 56, 56, 58, 58, 60,
+    60, 62, 62, 64, 64, 66, 68, 70, 72, 74, 74, 76, 76, 78, 80, 82, 82, 84, 84, 86, 88, 88, 90, 92, 94,
+    94, 96, 98, 100, 100, 102, 104, 104, 106, 106, 108, 110, 112, 114, 115, 116, 118, 120, 122, 124, 126, 126,
+    128, 130, 132, 134, 136, 138, 140, 141, 144, 146, 148, 151, 152, 157, 158, 162, 164, 167, 168, 173, 174, 178,
+    180, 181, 184, 186, 190, 192, 195, 196, 200, 204, 205, 209, 210, 222, 222, 226, 227, 230, 232, 231, 238, 237, 244,
+    243, 247, 247, 251, 252, 257, 258, 259, 266, 267, 270, 269, 278, 281, 282, 285, 286, 289, 289, 293, 294, 294, 294,
+]
+
+
+atomic_mass_of_elements = [
+    1.008, 4.0026, 6.94, 9.0122, 10.81, 12.011, 14.007, 15.999, 18.998, 20.180, 22.99, 24.305, 26.982, 28.085, 
+    30.974, 32.06, 35.45, 39.948, 39.098, 40.078, 44.956, 47.867, 50.942, 51.996, 54.938, 55.845, 58.933, 58.693, 
+    63.546, 65.38, 69.723, 72.63, 74.922, 78.971, 79.904, 83.798, 85.468, 87.62, 88.906, 91.224, 92.906, 95.95, 
+    98, 101.07, 102.91, 106.42, 107.87, 112.41, 114.82, 118.71, 121.76, 127.6, 126.9, 131.29, 132.91, 137.33, 
+    138.91, 140.12, 140.91, 144.24, 144.91, 150.36, 151.96, 157.25, 158.93, 162.5, 164.93, 167.26, 168.93, 173.05, 
+    174.97, 178.49, 180.95, 183.84, 186.21, 190.23, 192.22, 195.08, 196.97, 200.59, 204.38, 207.2, 208.98, 209, 
+    210, 222, 223, 226, 227, 232.04, 231.04, 238.03, 237, 244, 243, 247, 247, 251, 252, 257, 258, 259, 262, 
+    267, 270, 270, 277, 276, 281, 280, 285, 284, 289, 288, 293, 294
+]
+
+element_nature = [
+    "Non-metal",   # Hydrogen (H)
+    "Noble Gas",   # Helium (He)
+    "Metal",       # Lithium (Li)
+    "Metal",       # Beryllium (Be)
+    "Metalloid",   # Boron (B)
+    "Non-metal",   # Carbon (C)
+    "Non-metal",   # Nitrogen (N)
+    "Non-metal",   # Oxygen (O)
+    "Non-metal",   # Fluorine (F)
+    "Noble Gas",   # Neon (Ne)
+    "Metal",       # Sodium (Na)
+    "Metal",       # Magnesium (Mg)
+    "Non-metal",   # Aluminum (Al)
+    "Non-metal",   # Silicon (Si)
+    "Non-metal",   # Phosphorus (P)
+    "Non-metal",   # Sulfur (S)
+    "Non-metal",   # Chlorine (Cl)
+    "Noble Gas",   # Argon (Ar)
+    "Metal",       # Potassium (K)
+    "Metal",       # Calcium (Ca)
+    "Metal",       # Scandium (Sc)
+    "Metal",       # Titanium (Ti)
+    "Metal",       # Vanadium (V)
+    "Metal",       # Chromium (Cr)
+    "Metal",       # Manganese (Mn)
+    "Metal",       # Iron (Fe)
+    "Metal",       # Cobalt (Co)
+    "Metal",       # Nickel (Ni)
+    "Metal",       # Copper (Cu)
+    "Metal",       # Zinc (Zn)
+    "Metal",       # Gallium (Ga)
+    "Metal",       # Germanium (Ge)
+    "Metalloid",   # Arsenic (As)
+    "Non-metal",   # Selenium (Se)
+    "Non-metal",   # Bromine (Br)
+    "Noble Gas",   # Krypton (Kr)
+    "Metal",       # Rubidium (Rb)
+    "Metal",       # Strontium (Sr)
+    "Metal",       # Yttrium (Y)
+    "Metal",       # Zirconium (Zr)
+    "Metal",       # Niobium (Nb)
+    "Metal",       # Molybdenum (Mo)
+    "Metal",       # Technetium (Tc)
+    "Metal",       # Ruthenium (Ru)
+    "Metal",       # Rhodium (Rh)
+    "Metal",       # Palladium (Pd)
+    "Metal",       # Silver (Ag)
+    "Metal",       # Cadmium (Cd)
+    "Metal",       # Indium (In)
+    "Metal",       # Tin (Sn)
+    "Metal",       # Antimony (Sb)
+    "Metalloid",   # Tellurium (Te)
+    "Non-metal",   # Iodine (I)
+    "Noble Gas",   # Xenon (Xe)
+    "Metal",       # Cesium (Cs)
+    "Metal",       # Barium (Ba)
+    "Metal",       # Lanthanum (La)
+    "Metal",       # Cerium (Ce)
+    "Metal",       # Praseodymium (Pr)
+    "Metal",       # Neodymium (Nd)
+    "Metal",       # Promethium (Pm)
+    "Metal",       # Samarium (Sm)
+    "Metal",       # Europium (Eu)
+    "Metal",       # Gadolinium (Gd)
+    "Metal",       # Terbium (Tb)
+    "Metal",       # Dysprosium (Dy)
+    "Metal",       # Holmium (Ho)
+    "Metal",       # Erbium (Er)
+    "Metal",       # Thulium (Tm)
+    "Metal",       # Ytterbium (Yb)
+    "Metal",       # Lutetium (Lu)
+    "Metal",       # Hafnium (Hf)
+    "Metal",       # Tantalum (Ta)
+    "Metal",       # Tungsten (W)
+    "Metal",       # Rhenium (Re)
+    "Metal",       # Osmium (Os)
+    "Metal",       # Iridium (Ir)
+    "Metal",       # Platinum (Pt)
+    "Metal",       # Gold (Au)
+    "Metal",       # Mercury (Hg)
+    "Metal",       # Thallium (Tl)
+    "Metal",       # Lead (Pb)
+    "Metal",       # Bismuth (Bi)
+    "Metal",       # Polonium (Po)
+    "Metalloid",   # Astatine (At)
+    "Noble Gas",   # Radon (Rn)
+    "Metal",       # Francium (Fr)
+    "Metal",       # Radium (Ra)
+    "Metal",       # Actinium (Ac)
+    "Metal",       # Thorium (Th)
+    "Metal",       # Protactinium (Pa)
+    "Metal",       # Uranium (U)
+    "Metal",       # Neptunium (Np)
+    "Metal",       # Plutonium (Pu)
+    "Metal",       # Americium (Am)
+    "Metal",       # Curium (Cm)
+    "Metal",       # Berkelium (Bk)
+    "Metal",       # Californium (Cf)
+    "Metal",       # Einsteinium (Es)
+    "Metal",       # Fermium (Fm)
+    "Metal",       # Mendelevium (Md)
+    "Metal",       # Nobelium (No)
+    "Metal",       # Lawrencium (Lr)
+    "Metal",       # Rutherfordium (Rf)
+    "Metal",       # Dubnium (Db)
+    "Metal",       # Seaborgium (Sg)
+    "Metal",       # Bohrium (Bh)
+    "Metal",       # Hassium (Hs)
+    "Metal",       # Meitnerium (Mt)
+    "Metal",       # Darmstadtium (Ds)
+    "Metal",       # Roentgenium (Rg)
+    "Metal",       # Copernicium (Cn)
+    "Metal",       # Nihonium (Nh)
+    "Metal",       # Flerovium (Fl)
+    "Metal",       # Moscovium (Mc)
+    "Metal",       # Livermorium (Lv)
+    "Metal",       # Tennessine (Ts)
+    "Metal",       # Oganesson (Og)
+]
+
+
+valency_of_elements = [
+    (1, 1),   # Hydrogen (H)
+    (2, None),   # Helium (He)
+    (3, 1),   # Lithium (Li)
+    (4, 2),   # Beryllium (Be)
+    (5, 3),   # Boron (B)
+    (6, 4),   # Carbon (C)
+    (7, 3),   # Nitrogen (N)
+    (8, 2),   # Oxygen (O)
+    (9, 1),   # Fluorine (F)
+    (10, None),   # Neon (Ne)
+    (11, 1),   # Sodium (Na)
+    (12, 2),   # Magnesium (Mg)
+    (13, 3),   # Aluminum (Al)
+    (14, 4),   # Silicon (Si)
+    (15, 3),   # Phosphorus (P)
+    (16, 2),   # Sulfur (S)
+    (17, 1),   # Chlorine (Cl)
+    (18, None),   # Argon (Ar)
+    (19, 1),   # Potassium (K)
+    (20, 2),   # Calcium (Ca)
+    (21, 3),   # Scandium (Sc)
+    (22, 4),   # Titanium (Ti)
+    (23, 5),   # Vanadium (V)
+    (24, 6),   # Chromium (Cr)
+    (25, 2),   # Manganese (Mn)
+    (26, 2),   # Iron (Fe)
+    (27, 2),   # Cobalt (Co)
+    (28, 2),   # Nickel (Ni)
+    (29, 1),   # Copper (Cu)
+    (30, 2),   # Zinc (Zn)
+    (31, 3),   # Gallium (Ga)
+    (32, 4),   # Germanium (Ge)
+    (33, 3),   # Arsenic (As)
+    (34, 2),   # Selenium (Se)
+    (35, 1),   # Bromine (Br)
+    (36, None),   # Krypton (Kr)
+    (37, 1),   # Rubidium (Rb)
+    (38, 2),   # Strontium (Sr)
+    (39, 3),   # Yttrium (Y)
+    (40, 4),   # Zirconium (Zr)
+    (41, 5),   # Niobium (Nb)
+    (42, 6),   # Molybdenum (Mo)
+    (43, None),   # Technetium (Tc)
+    (44, 3),   # Ruthenium (Ru)
+    (45, 2),   # Rhodium (Rh)
+    (46, 2),   # Palladium (Pd)
+    (47, 1),   # Silver (Ag)
+    (48, 2),   # Cadmium (Cd)
+    (49, 3),   # Indium (In)
+    (50, 4),   # Tin (Sn)
+    (51, 3),   # Antimony (Sb)
+    (52, 2),   # Tellurium (Te)
+    (53, 1),   # Iodine (I)
+    (54, None),   # Xenon (Xe)
+    (55, 1),   # Cesium (Cs)
+    (56, 2),   # Barium (Ba)
+    (57, 3),   # Lanthanum (La)
+    (58, 4),   # Cerium (Ce)
+    (59, None),   # Praseodymium (Pr)
+    (60, None),   # Neodymium (Nd)
+    (61, None),   # Promethium (Pm)
+    (62, None),   # Samarium (Sm)
+    (63, None),   # Europium (Eu)
+    (64, None),   # Gadolinium (Gd)
+    (65, None),   # Terbium (Tb)
+    (66, None),   # Dysprosium (Dy)
+    (67, None),   # Holmium (Ho)
+    (68, None),   # Erbium (Er)
+    (69, None),   # Thulium (Tm)
+    (70, None),   # Ytterbium (Yb)
+    (71, None),   # Lutetium (Lu)
+    (72, 4),   # Hafnium (Hf)
+    (73, 5),   # Tantalum (Ta)
+    (74, 6),   # Tungsten (W)
+    (75, 7),   # Rhenium (Re)
+    (76, 8),   # Osmium (Os)
+    (77, 9),   # Iridium (Ir)
+    (78, 10),   # Platinum (Pt)
+    (79, 1),   # Gold (Au)
+    (80, 2),   # Mercury (Hg)
+    (81, 3),   # Thallium (Tl)
+    (82, 4),   # Lead (Pb)
+    (83, 3),   # Bismuth (Bi)
+    (84, 2),   # Polonium (Po)
+    (85, 1),   # Astatine (At)
+    (86, None),   # Radon (Rn)
+    (87, 1),   # Francium (Fr)
+    (88, 2),   # Radium (Ra)
+    (89, 3),   # Actinium (Ac)
+    (90, None),   # Thorium (Th)
+    (91, None),   # Protactinium (Pa)
+    (92, 4),   # Uranium (U)
+    (93, None),   # Neptunium (Np)
+    (94, None),   # Plutonium (Pu)
+    (95, None),   # Americium (Am)
+    (96, None),   # Curium (Cm)
+    (97, None),   # Berkelium (Bk)
+    (98, None),   # Californium (Cf)
+    (99, None),   # Einsteinium (Es)
+    (100, None),   # Fermium (Fm)
+    (101, None),   # Mendelevium (Md)
+    (102, None),   # Nobelium (No)
+    (103, None),   # Lawrencium (Lr)
+    (104, None),   # Rutherfordium (Rf)
+    (105, None),   # Dubnium (Db)
+    (106, None),   # Seaborgium (Sg)
+    (107, None),   # Bohrium (Bh)
+    (108, None),   # Hassium (Hs)
+    (109, None),   # Meitnerium (Mt)
+    (110, None),   # Darmstadtium (Ds)
+    (111, None),   # Roentgenium (Rg)
+    (112, None),   # Copernicium (Cn)
+    (113, None),   # Nihonium (Nh)
+    (114, None),   # Flerovium (Fl)
+    (115, None),   # Moscovium (Mc)
+    (116, None),   # Livermorium (Lv)
+    (117, None),   # Tennessine (Ts)
+    (118, None),   # Oganesson (Og)
+]
+
+
+
+isotopes_of_elements = [
+    (1, [1]),  # Hydrogen (H) - Isotopes: H-1
+    (2, [4, 3]),  # Helium (He) - Isotopes: He-3, He-4
+    (3, [7, 6]),  # Lithium (Li) - Isotopes: Li-6, Li-7
+    (4, [9]),  # Beryllium (Be) - Isotopes: Be-9
+    (5, [11, 10]),  # Boron (B) - Isotopes: B-10, B-11
+    (6, [14, 13, 12]),  # Carbon (C) - Isotopes: C-12, C-13, C-14
+    (7, [15]),  # Nitrogen (N) - Isotopes: N-15
+    (8, [16, 17, 18]),  # Oxygen (O) - Isotopes: O-16, O-17, O-18
+    (9, [19]),  # Fluorine (F) - Isotopes: F-19
+    (10, [20, 21]),  # Neon (Ne) - Isotopes: Ne-20, Ne-21
+    (11, [23, 22]),  # Sodium (Na) - Isotopes: Na-22, Na-23
+    (12, [24, 26, 25]),  # Magnesium (Mg) - Isotopes: Mg-24, Mg-25, Mg-26
+    (13, [27]),  # Aluminum (Al) - Isotopes: Al-27
+    (14, [28, 30, 29]),  # Silicon (Si) - Isotopes: Si-28, Si-29, Si-30
+    (15, [31]),  # Phosphorus (P) - Isotopes: P-31
+    (16, [32, 34, 33]),  # Sulfur (S) - Isotopes: S-32, S-33, S-34
+    (17, [35, 37]),  # Chlorine (Cl) - Isotopes: Cl-35, Cl-37
+    (18, [36, 38, 40]),  # Argon (Ar) - Isotopes: Ar-36, Ar-38, Ar-40
+    (19, [39, 41]),  # Potassium (K) - Isotopes: K-39, K-41
+    (20, [40, 42, 43, 44, 46, 48]),  # Calcium (Ca) - Isotopes: Ca-40, Ca-42, Ca-43, Ca-44, Ca-46, Ca-48
+    (21, [45]),  # Scandium (Sc) - Isotopes: Sc-45
+    (22, [46, 47, 48, 49, 50]),  # Titanium (Ti) - Isotopes: Ti-46, Ti-47, Ti-48, Ti-49, Ti-50
+    (23, [50, 51, 52, 53, 54]),  # Vanadium (V) - Isotopes: V-50, V-51, V-52, V-53, V-54
+    (24, [50, 52, 53, 54]),  # Chromium (Cr) - Isotopes: Cr-50, Cr-52, Cr-53, Cr-54
+    (25, [55]),  # Manganese (Mn) - Isotopes: Mn-55
+    (26, [54, 56, 57, 58]),  # Iron (Fe) - Isotopes: Fe-54, Fe-56, Fe-57, Fe-58
+    (27, [59, 58, 60]),  # Cobalt (Co) - Isotopes: Co-58, Co-59, Co-60
+    (28, [58, 60, 61, 62]),  # Nickel (Ni) - Isotopes: Ni-58, Ni-60, Ni-61, Ni-62
+    (29, [63, 65]),  # Copper (Cu) - Isotopes: Cu-63, Cu-65
+    (30, [64, 66, 68]),  # Zinc (Zn) - Isotopes: Zn-64, Zn-66, Zn-68
+    (31, [69, 71]),  # Gallium (Ga) - Isotopes: Ga-69, Ga-71
+    (32, [70, 72, 73, 74, 76]),  # Germanium (Ge) - Isotopes: Ge-70, Ge-72, Ge-73, Ge-74, Ge-76
+    (33, [75]),  # Arsenic (As) - Isotopes: As-75
+    (34, [74, 76, 77, 78, 80, 82]),  # Selenium (Se) - Isotopes: Se-74, Se-76, Se-77, Se-78, Se-80, Se-82
+    (35, [79, 81]),  # Bromine (Br) - Isotopes: Br-79, Br-81
+    (36, [78, 80, 82, 83, 84, 86]),  # Krypton (Kr) - Isotopes: Kr-78, Kr-80, Kr-82, Kr-83, Kr-84, Kr-86
+    (37, [85, 87]),  # Rubidium (Rb) - Isotopes: Rb-85, Rb-87
+    (38, [84, 86, 87, 88, 89, 90, 91, 92]),  # Strontium (Sr) - Isotopes: Sr-84, Sr-86, Sr-87, Sr-88, Sr-89, Sr-90, Sr-91, Sr-92
+    (39, [89]),  # Yttrium (Y) - Isotopes: Y-89
+    (40, [90, 91, 92, 94]),  # Zirconium (Zr) - Isotopes: Zr-90, Zr-91, Zr-92, Zr-94
+    (41, [93]),  # Niobium (Nb) - Isotopes: Nb-93
+    (42, [92, 94, 95, 96, 97, 98, 100]),  # Molybdenum (Mo) - Isotopes: Mo-92, Mo-94, Mo-95, Mo-96, Mo-97, Mo-98, Mo-100
+    (43, [97]),  # Technetium (Tc) - Isotopes: Tc-97
+    (44, [96, 98, 99, 100, 101, 102, 104]),  # Ruthenium (Ru) - Isotopes: Ru-96, Ru-98, Ru-99, Ru-100, Ru-101, Ru-102, Ru-104
+    (45, [103]),  # Rhodium (Rh) - Isotopes: Rh-103
+    (46, [102, 104, 105, 106, 108, 110]),  # Palladium (Pd) - Isotopes: Pd-102, Pd-104, Pd-105, Pd-106, Pd-108, Pd-110
+    (47, [107, 109]),  # Silver (Ag) - Isotopes: Ag-107, Ag-109
+    (48, [106, 108, 110, 111, 112, 113, 114, 116]),  # Cadmium (Cd) - Isotopes: Cd-106, Cd-108, Cd-110, Cd-111, Cd-112, Cd-113, Cd-114, Cd-116
+    (49, [113, 115]),  # Indium (In) - Isotopes: In-113, In-115
+    (50, [112, 114, 115, 116, 117, 118, 119, 120, 122, 124]),  # Tin (Sn) - Isotopes: Sn-112, Sn-114, Sn-115, Sn-116, Sn-117, Sn-118, Sn-119, Sn-120, Sn-122, Sn-124
+    (51, [121, 123]),  # Antimony (Sb) - Isotopes: Sb-121, Sb-123
+    (52, [120, 122, 123, 124, 125, 126]),  # Tellurium (Te) - Isotopes: Te-120, Te-122, Te-123, Te-124, Te-125, Te-126
+    (53, [127]),  # Iodine (I) - Isotopes: I-127
+    (54, [124, 126, 128, 129, 130, 131, 132]),  # Xenon (Xe) - Isotopes: Xe-124, Xe-126, Xe-128, Xe-129, Xe-130, Xe-131, Xe-132
+    (55, [133, 135]),  # Cesium (Cs) - Isotopes: Cs-133, Cs-135
+    (56, [130, 132, 134, 135, 136, 137, 138, 139, 140]),  # Barium (Ba) - Isotopes: Ba-130, Ba-132, Ba-134, Ba-135, Ba-136, Ba-137, Ba-138, Ba-139, Ba-140
+    (57, [138]),  # Lanthanum (La) - Isotopes: La-138
+    (58, [136, 138, 139, 140, 141, 142, 143, 144, 145, 146, 148, 150]),  # Cerium (Ce) - Isotopes: Ce-136, Ce-138, Ce-139, Ce-140, Ce-141, Ce-142, Ce-143, Ce-144, Ce-145, Ce-146, Ce-148, Ce-150
+    (59, [145]),  # Praseodymium (Pr) - Isotopes: Pr-145
+    (60, [144, 146, 147, 148, 149, 150, 151, 152, 153]),  # Neodymium (Nd) - Isotopes: Nd-144, Nd-146, Nd-147, Nd-148, Nd-149, Nd-150, Nd-151, Nd-152, Nd-153
+    (61, [151]),  # Promethium (Pm) - Isotopes: Pm-151
+    (62, [152, 154, 155, 156]),  # Samarium (Sm) - Isotopes: Sm-152, Sm-154, Sm-155, Sm-156
+    (63, [157]),  # Europium (Eu) - Isotopes: Eu-157
+    (64, [158, 160]),  # Gadolinium (Gd) - Isotopes: Gd-158, Gd-160
+    (65, [159]),  # Terbium (Tb) - Isotopes: Tb-159
+    (66, [160, 161, 162, 163, 164]),  # Dysprosium (Dy) - Isotopes: Dy-160, Dy-161, Dy-162, Dy-163, Dy-164
+    (67, [165]),  # Holmium (Ho) - Isotopes: Ho-165
+    (68, [164, 166, 167, 168, 170]),  # Erbium (Er) - Isotopes: Er-164, Er-166, Er-167, Er-168, Er-170
+    (69, [169]),  # Thulium (Tm) - Isotopes: Tm-169
+    (70, [168, 170, 171, 172, 173, 174, 176]),  # Ytterbium (Yb) - Isotopes: Yb-168, Yb-170, Yb-171, Yb-172, Yb-173, Yb-174, Yb-176
+    (71, [175]),  # Lutetium (Lu) - Isotopes: Lu-175
+    (72, [174, 176, 177, 178, 179, 180]),  # Hafnium (Hf) - Isotopes: Hf-174, Hf-176, Hf-177, Hf-178, Hf-179, Hf-180
+    (73, [181]),  # Tantalum (Ta) - Isotopes: Ta-181
+    (74, [180, 181, 182, 183, 184, 186]),  # Tungsten (W) - Isotopes: W-180, W-181, W-182, W-183, W-184, W-186
+    (75, [185]),  # Rhenium (Re) - Isotopes: Re-185
+    (76, [184, 187, 188, 189, 190, 192]),  # Osmium (Os) - Isotopes: Os-184, Os-187, Os-188, Os-189, Os-190, Os-192
+    (77, [191, 193]),  # Iridium (Ir) - Isotopes: Ir-191, Ir-193
+    (78, [190, 192, 194, 195, 196, 198]),  # Platinum (Pt) - Isotopes: Pt-190, Pt-192, Pt-194, Pt-195, Pt-196, Pt-198
+    (79, [197]),  # Gold (Au) - Isotopes: Au-197
+    (80, [196, 198, 199, 200, 201, 202, 204]),  # Mercury (Hg) - Isotopes: Hg-196, Hg-198, Hg-199, Hg-200, Hg-201, Hg-202, Hg-204
+    (81, [203]),  # Thallium (Tl) - Isotopes: Tl-203
+    (82, [204, 206, 207, 208]),  # Lead (Pb) - Isotopes: Pb-204, Pb-206, Pb-207, Pb-208
+    (83, [209]),  # Bismuth (Bi) - Isotopes: Bi-209
+    (84, [209, 210, 211, 212, 214]),  # Polonium (Po) - Isotopes: Po-209, Po-210, Po-211, Po-212, Po-214
+    (85, [210, 211, 212, 213]),  # Astatine (At) - Isotopes: At-210, At-211, At-212, At-213
+    (86, [220, 222]),  # Radon (Rn) - Isotopes: Rn-220, Rn-222
+    (87, [223]),  # Francium (Fr) - Isotopes: Fr-223
+    (88, [226, 228]),  # Radium (Ra) - Isotopes: Ra-226, Ra-228
+    (89, [227]),  # Actinium (Ac) - Isotopes: Ac-227
+    (90, [232, 230]),  # Thorium (Th) - Isotopes: Th-232, Th-230
+    (91, [231]),  # Protactinium (Pa) - Isotopes: Pa-231
+    (92, [234, 235, 238]),  # Uranium (U) - Isotopes: U-234, U-235, U-238
+    (93, [237]),  # Neptunium (Np) - Isotopes: Np-237
+    (94, [238, 239, 240, 241, 242]),  # Plutonium (Pu) - Isotopes: Pu-238, Pu-239, Pu-240, Pu-241, Pu-242
+    (95, [243]),  # Americium (Am) - Isotopes: Am-243
+    (96, [244, 243, 245, 246, 247]),  # Curium (Cm) - Isotopes: Cm-244, Cm-243, Cm-245, Cm-246, Cm-247
+    (97, [247, 249]),  # Berkelium (Bk) - Isotopes: Bk-247, Bk-249
+    (98, [249, 250, 251, 252]),  # Californium (Cf) - Isotopes: Cf-249, Cf-250, Cf-251, Cf-252
+    (99, [252, 253]),  # Einsteinium (Es) - Isotopes: Es-252, Es-253
+    (100, [254]),  # Fermium (Fm) - Isotopes: Fm-254
+    (101, [257]),  # Mendelevium (Md) - Isotopes: Md-257
+    (102, [258, 259]),  # Nobelium (No) - Isotopes: No-258, No-259
+    (103, [260]),  # Lawrencium (Lr) - Isotopes: Lr-260
+    (104, [261, 262]),  # Rutherfordium (Rf) - Isotopes: Rf-261, Rf-262
+    (105, [262, 263, 264]),  # Dubnium (Db) - Isotopes: Db-262, Db-263, Db-264
+    (106, [264, 265]),  # Seaborgium (Sg) - Isotopes: Sg-264, Sg-265
+    (107, [266]),  # Bohrium (Bh) - Isotopes: Bh-266
+    (108, [267, 268]),  # Hassium (Hs) - Isotopes: Hs-267, Hs-268
+    (109, [268, 269]),  # Meitnerium (Mt) - Isotopes: Mt-268, Mt-269
+    (110, [271]),  # Darmstadtium (Ds) - Isotopes: Ds-271
+    (111, [272, 273]),  # Roentgenium (Rg) - Isotopes: Rg-272, Rg-273
+    (112, [277]),  # Copernicium (Cn) - Isotopes: Cn-277
+    (113, [278, 282]),  # Nihonium (Nh) - Isotopes: Nh-278, Nh-282
+    (114, [285]),  # Flerovium (Fl) - Isotopes: Fl-285
+    (115, [286]),  # Moscovium (Mc) - Isotopes: Mc-286
+    (116, [289]),  # Livermorium (Lv) - Isotopes: Lv-289
+    (117, [288, 289, 290]),  # Tennessine (Ts) - Isotopes: Ts-288, Ts-289, Ts-290
+    (118, [294]),  # Oganesson (Og) - Isotopes: Og-294
+]
+
+
+
+densities_of_elements = [
+    (1, 0.0000899),     # Hydrogen (H) - Density: 0.0000899 g/cm³
+    (2, 0.0001786),     # Helium (He) - Density: 0.0001786 g/cm³
+    (3, 0.534),         # Lithium (Li) - Density: 0.534 g/cm³
+    (4, 1.85),          # Beryllium (Be) - Density: 1.85 g/cm³
+    (5, 2.37),          # Boron (B) - Density: 2.37 g/cm³
+    (6, 2.267),         # Carbon (C) - Density: 2.267 g/cm³
+    (7, 0.00125),       # Nitrogen (N) - Density: 0.00125 g/cm³
+    (8, 0.001429),      # Oxygen (O) - Density: 0.001429 g/cm³
+    (9, 0.0001786),     # Fluorine (F) - Density: 0.0001786 g/cm³
+    (10, 0.0008999),    # Neon (Ne) - Density: 0.0008999 g/cm³
+    (11, 0.97),         # Sodium (Na) - Density: 0.97 g/cm³
+    (12, 1.738),        # Magnesium (Mg) - Density: 1.738 g/cm³
+    (13, 2.7),          # Aluminum (Al) - Density: 2.7 g/cm³
+    (14, 2.3296),       # Silicon (Si) - Density: 2.3296 g/cm³
+    (15, 1.82),         # Phosphorus (P) - Density: 1.82 g/cm³
+    (16, 2.067),        # Sulfur (S) - Density: 2.067 g/cm³
+    (17, 0.003214),     # Chlorine (Cl) - Density: 0.003214 g/cm³
+    (18, 0.0017837),    # Argon (Ar) - Density: 0.0017837 g/cm³
+    (19, 0.862),        # Potassium (K) - Density: 0.862 g/cm³
+    (20, 1.55),         # Calcium (Ca) - Density: 1.55 g/cm³
+    (21, 2.985),        # Scandium (Sc) - Density: 2.985 g/cm³
+    (22, 4.507),        # Titanium (Ti) - Density: 4.507 g/cm³
+    (23, 6.11),         # Vanadium (V) - Density: 6.11 g/cm³
+    (24, 7.19),         # Chromium (Cr) - Density: 7.19 g/cm³
+    (25, 7.3),          # Manganese (Mn) - Density: 7.3 g/cm³
+    (26, 7.874),        # Iron (Fe) - Density: 7.874 g/cm³
+    (27, 8.86),         # Cobalt (Co) - Density: 8.86 g/cm³
+    (28, 8.912),        # Nickel (Ni) - Density: 8.912 g/cm³
+    (29, 8.96),         # Copper (Cu) - Density: 8.96 g/cm³
+    (30, 7.134),        # Zinc (Zn) - Density: 7.134 g/cm³
+    (31, 5.907),        # Gallium (Ga) - Density: 5.907 g/cm³
+    (32, 5.323),        # Germanium (Ge) - Density: 5.323 g/cm³
+    (33, 5.776),        # Arsenic (As) - Density: 5.776 g/cm³
+    (34, 4.809),        # Selenium (Se) - Density: 4.809 g/cm³
+    (35, 3.12),         # Bromine (Br) - Density: 3.12 g/cm³
+    (36, 0.003733),     # Krypton (Kr) - Density: 0.003733 g/cm³
+    (37, 1.532),        # Rubidium (Rb) - Density: 1.532 g/cm³
+    (38, 2.64),         # Strontium (Sr) - Density: 2.64 g/cm³
+    (39, 4.469),        # Yttrium (Y) - Density: 4.469 g/cm³
+    (40, 6.506),        # Zirconium (Zr) - Density: 6.506 g/cm³
+    (41, 8.57),         # Niobium (Nb) - Density: 8.57 g/cm³
+    (42, 10.22),        # Molybdenum (Mo) - Density: 10.22 g/cm³
+    (43, 11.5),         # Technetium (Tc) - Density: 11.5 g/cm³
+    (44, 12.37),        # Ruthenium (Ru) - Density: 12.37 g/cm³
+    (45, 12.41),        # Rhodium (Rh) - Density: 12.41 g/cm³
+    (46, 12.02),        # Palladium (Pd) - Density: 12.02 g/cm³
+    (47, 10.501),       # Silver (Ag) - Density: 10.501 g/cm³
+    (48, 8.69),         # Cadmium (Cd) - Density: 8.69 g/cm³
+    (49, 7.31),         # Indium (In) - Density: 7.31 g/cm³
+    (50, 7.287),        # Tin (Sn) - Density: 7.287 g/cm³
+    (51, 6.685),        # Antimony (Sb) - Density: 6.685 g/cm³
+    (52, 6.232),        # Tellurium (Te) - Density: 6.232 g/cm³
+    (53, 4.93),         # Iodine (I) - Density: 4.93 g/cm³
+    (54, 0.005887),     # Xenon (Xe) - Density: 0.005887 g/cm³
+    (55, 1.873),        # Cesium (Cs) - Density: 1.873 g/cm³
+    (56, 3.594),        # Barium (Ba) - Density: 3.594 g/cm³
+    (57, 6.162),        # Lanthanum (La) - Density: 6.162 g/cm³
+    (58, 6.77),         # Cerium (Ce) - Density: 6.77 g/cm³
+    (59, 6.773),        # Praseodymium (Pr) - Density: 6.773 g/cm³
+    (60, 7.007),        # Neodymium (Nd) - Density: 7.007 g/cm³
+    (61, 7.26),         # Promethium (Pm) - Density: 7.26 g/cm³
+    (62, 7.52),         # Samarium (Sm) - Density: 7.52 g/cm³
+    (63, 5.243),        # Europium (Eu) - Density: 5.243 g/cm³
+    (64, 7.895),        # Gadolinium (Gd) - Density: 7.895 g/cm³
+    (65, 8.229),        # Terbium (Tb) - Density: 8.229 g/cm³
+    (66, 8.551),        # Dysprosium (Dy) - Density: 8.551 g/cm³
+    (67, 9.066),        # Holmium (Ho) - Density: 9.066 g/cm³
+    (68, 9.321),        # Erbium (Er) - Density: 9.321 g/cm³
+    (69, 6.966),        # Thulium (Tm) - Density: 6.966 g/cm³
+    (70, 6.965),        # Ytterbium (Yb) - Density: 6.965 g/cm³
+    (71, 9.84),         # Lutetium (Lu) - Density: 9.84 g/cm³
+    (72, 13.31),        # Hafnium (Hf) - Density: 13.31 g/cm³
+    (73, 16.654),       # Tantalum (Ta) - Density: 16.654 g/cm³
+    (74, 19.25),        # Tungsten (W) - Density: 19.25 g/cm³
+    (75, 21.02),        # Rhenium (Re) - Density: 21.02 g/cm³
+    (76, 22.59),        # Osmium (Os) - Density: 22.59 g/cm³
+    (77, 22.56),        # Iridium (Ir) - Density: 22.56 g/cm³
+    (78, 21.45),        # Platinum (Pt) - Density: 21.45 g/cm³
+    (79, 19.32),        # Gold (Au) - Density: 19.32 g/cm³
+    (80, 13.5336),      # Mercury (Hg) - Density: 13.5336 g/cm³
+    (81, 11.85),        # Thallium (Tl) - Density: 11.85 g/cm³
+    (82, 11.34),        # Lead (Pb) - Density: 11.34 g/cm³
+    (83, 9.78),         # Bismuth (Bi) - Density: 9.78 g/cm³
+    (84, 9.196),        # Polonium (Po) - Density: 9.196 g/cm³
+    (85, 7.0),          # Astatine (At) - Density: 7.0 g/cm³
+    (86, 0.00973),      # Radon (Rn) - Density: 0.00973 g/cm³
+    (87, 0.53),         # Francium (Fr) - Density: 0.53 g/cm³
+    (88, 5.0),          # Radium (Ra) - Density: 5.0 g/cm³
+    (89, 10.07),        # Actinium (Ac) - Density: 10.07 g/cm³
+    (90, 11.724),       # Thorium (Th) - Density: 11.724 g/cm³
+    (91, 15.37),        # Protactinium (Pa) - Density: 15.37 g/cm³
+    (92, 18.95),        # Uranium (U) - Density: 18.95 g/cm³
+    (93, 20.45),        # Neptunium (Np) - Density: 20.45 g/cm³
+    (94, 19.86),        # Plutonium (Pu) - Density: 19.86 g/cm³
+    (95, 13.67),        # Americium (Am) - Density: 13.67 g/cm³
+    (96, 13.51),        # Curium (Cm) - Density: 13.51 g/cm³
+    (97, 14.78),        # Berkelium (Bk) - Density: 14.78 g/cm³
+    (98, 15.1),         # Californium (Cf) - Density: 15.1 g/cm³
+    (99, 13.5),         # Einsteinium (Es) - Density: 13.5 g/cm³
+    (100, 9.7),         # Fermium (Fm) - Density: 9.7 g/cm³
+    (101, 10.3),        # Mendelevium (Md) - Density: 10.3 g/cm³
+    (102, 9.9),         # Nobelium (No) - Density: 9.9 g/cm³
+    (103, 15.6),        # Lawrencium (Lr) - Density: 15.6 g/cm³
+    (104, 23.2),        # Rutherfordium (Rf) - Density: 23.2 g/cm³
+    (105, 35.0),        # Dubnium (Db) - Density: 35.0 g/cm³
+    (106, 35.0),        # Seaborgium (Sg) - Density: 35.0 g/cm³
+    (107, 37.0),        # Bohrium (Bh) - Density: 37.0 g/cm³
+    (108, 40.0),        # Hassium (Hs) - Density: 40.0 g/cm³
+    (109, 37.0),        # Meitnerium (Mt) - Density: 37.0 g/cm³
+    (110, 34.0),        # Darmstadtium (Ds) - Density: 34.0 g/cm³
+    (111, 29.7),        # Roentgenium (Rg) - Density: 29.7 g/cm³
+    (112, 29.3),        # Copernicium (Cn) - Density: 29.3 g/cm³
+    (113, 13.5),        # Nihonium (Nh) - Density: 13.5 g/cm³
+    (114, 14.0),        # Flerovium (Fl) - Density: 14.0 g/cm³
+    (115, 13.5),        # Moscovium (Mc) - Density: 13.5 g/cm³
+    (116, 12.9),        # Livermorium (Lv) - Density: 12.9 g/cm³
+    (117, 7.0),         # Tennessine (Ts) - Density: 7.0 g/cm³
+    (118, 4.9),         # Oganesson (Og) - Density: 4.9 g/cm³
+]
+
+
+discoveries_of_elements = [
+    (1, ("Henry Cavendish", 1766)),  # Hydrogen (H)
+    (2, ("Pierre Janssen", 1868)),  # Helium (He)
+    (3, ("Johan August Arfwedson", 1817)),  # Lithium (Li)
+    (4, ("Louis-Nicolas Vauquelin", 1798)),  # Beryllium (Be)
+    (5, ("Joseph Louis Gay-Lussac", 1808)),  # Boron (B)
+    (6, ("Ancient Times", "Prehistoric")),  # Carbon (C)
+    (7, ("Daniel Rutherford", 1772)),  # Nitrogen (N)
+    (8, ("Joseph Priestley", 1774)),  # Oxygen (O)
+    (9, ("André-Marie Ampère", 1810)),  # Fluorine (F)
+    (10, ("Pierre Janssen", 1898)),  # Neon (Ne)
+    (11, ("Humphry Davy", 1807)),  # Sodium (Na)
+    (12, ("Joseph Black", 1755)),  # Magnesium (Mg)
+    (13, ("Hans Christian Ørsted", 1824)),  # Aluminum (Al)
+    (14, ("Jöns Jacob Berzelius", 1823)),  # Silicon (Si)
+    (15, ("Hennig Brand", 1669)),  # Phosphorus (P)
+    (16, ("Ancient Times", "Prehistoric")),  # Sulfur (S)
+    (17, ("Carl Wilhelm Scheele", 1774)),  # Chlorine (Cl)
+    (18, ("William Ramsay and Morris Travers", 1898)),  # Argon (Ar)
+    (19, ("Humphry Davy", 1807)),  # Potassium (K)
+    (20, ("Humphry Davy", 1808)),  # Calcium (Ca)
+    (21, ("Anders Gustaf Ekeberg", 1802)),  # Scandium (Sc)
+    (22, ("Martin Heinrich Klaproth", 1795)),  # Titanium (Ti)
+    (23, ("Nils Gabriel Sefström", 1830)),  # Vanadium (V)
+    (24, ("Louis Nicolas Vauquelin", 1797)),  # Chromium (Cr)
+    (25, ("Johan Gottlieb Gahn", 1774)),  # Manganese (Mn)
+    (26, ("Ancient Times", "Prehistoric")),  # Iron (Fe)
+    (27, ("Georg Brandt", 1735)),  # Cobalt (Co)
+    (28, ("Axel Fredrik Cronstedt", 1751)),  # Nickel (Ni)
+    (29, ("Ancient Times", "Prehistoric")),  # Copper (Cu)
+    (30, ("Andreas Sigismund Marggraf", 1746)),  # Zinc (Zn)
+    (31, ("Lecoq de Boisbaudran", 1875)),  # Gallium (Ga)
+    (32, ("Clemens Winkler", 1886)),  # Germanium (Ge)
+    (33, ("Albertus Magnus", 1250)),  # Arsenic (As)
+    (34, ("Jöns Jacob Berzelius", 1817)),  # Selenium (Se)
+    (35, ("Ancient Times", "Prehistoric")),  # Bromine (Br)
+    (36, ("Sir William Ramsay and Morris Travers", 1898)),  # Krypton (Kr)
+    (37, ("Robert Bunsen and Gustav Kirchhoff", 1860)),  # Rubidium (Rb)
+    (38, ("William Cruickshank", 1808)),  # Strontium (Sr)
+    (39, ("Johan Gadolin", 1794)),  # Yttrium (Y)
+    (40, ("Martin Heinrich Klaproth", 1789)),  # Zirconium (Zr)
+    (41, ("Charles Hatchett", 1801)),  # Niobium (Nb)
+    (42, ("Carl Wilhelm Scheele", 1778)),  # Molybdenum (Mo)
+    (43, ("Carlo Perrier and Emilio Segrè", 1937)),  # Technetium (Tc)
+    (44, ("Jöns Jacob Berzelius", 1827)),  # Ruthenium (Ru)
+    (45, ("William Hyde Wollaston", 1803)),  # Rhodium (Rh)
+    (46, ("William Hyde Wollaston", 1803)),  # Palladium (Pd)
+    (47, ("Ancient Times", "Prehistoric")),  # Silver (Ag)
+    (48, ("George Cadmium", 1817)),  # Cadmium (Cd)
+    (49, ("Ferdinand Reich and Hieronymous Theodor Richter", 1863)),  # Indium (In)
+    (50, ("Ancient Times", "Prehistoric")),  # Tin (Sn)
+    (51, ("Ancient Times", "Prehistoric")),  # Antimony (Sb)
+    (52, ("Franz-Joseph Müller von Reichenstein", 1782)),  # Tellurium (Te)
+    (53, ("Bernard Courtois", 1811)),  # Iodine (I)
+    (54, ("William Ramsay and Morris Travers", 1898)),  # Xenon (Xe)
+    (55, ("Robert Bunsen and Gustav Kirchhoff", 1860)),  # Cesium (Cs)
+    (56, ("Carl Wilhelm Scheele", 1808)),  # Barium (Ba)
+    (57, ("Carl Gustaf Mosander", 1839)),  # Lanthanum (La)
+    (58, ("Martin Heinrich Klaproth", 1803)),  # Cerium (Ce)
+    (59, ("Carl Gustaf Mosander", 1841)),  # Praseodymium (Pr)
+    (60, ("Carl Gustaf Mosander", 1885)),  # Neodymium (Nd)
+    (61, ("Charles James", 1885)),  # Promethium (Pm)
+    (62, ("Paul Émile Lecoq de Boisbaudran", 1879)),  # Samarium (Sm)
+    (63, ("Eugène-Anatole Demarçay", 1896)),  # Europium (Eu)
+    (64, ("Jean Charles Galissard de Marignac", 1880)),  # Gadolinium (Gd)
+    (65, ("Carl Gustaf Mosander", 1843)),  # Terbium (Tb)
+    (66, ("Paul Émile Lecoq de Boisbaudran", 1886)),  # Dysprosium (Dy)
+    (67, ("Marc Delafontaine and Jacques-Louis Soret", 1878)),  # Holmium (Ho)
+    (68, ("Carl Gustaf Mosander", 1843)),  # Erbium (Er)
+    (69, ("Per Teodor Cleve", 1879)),  # Thulium (Tm)
+    (70, ("Jean Charles Galissard de Marignac", 1878)),  # Ytterbium (Yb)
+    (71, ("Georges Urbain", 1907)),  # Lutetium (Lu)
+    (72, ("Dirk Coster and Georg von Hevesy", 1923)),  # Hafnium (Hf)
+    (73, ("Anders Gustaf Ekeberg", 1802)),  # Tantalum (Ta)
+    (74, ("Fausto de Elhuyar and Juan José de Elhuyar", 1783)),  # Tungsten (W)
+    (75, ("Masataka Ogawa", 1908)),  # Rhenium (Re)
+    (76, ("Smithson Tennant", 1803)),  # Osmium (Os)
+    (77, ("Smithson Tennant", 1803)),  # Iridium (Ir)
+    (78, ("Antonio de Ulloa", 1735)),  # Platinum (Pt)
+    (79, ("Ancient Times", "Prehistoric")),  # Gold (Au)
+    (80, ("Ancient Times", "Prehistoric")),  # Mercury (Hg)
+    (81, ("William Crookes", 1861)),  # Thallium (Tl)
+    (82, ("Ancient Times", "Prehistoric")),  # Lead (Pb)
+    (83, ("Claude François Geoffroy", 1753)),  # Bismuth (Bi)
+    (84, ("Pierre Curie and Marie Curie", 1898)),  # Polonium (Po)
+    (85, ("Dale R. Corson", 1940)),  # Astatine (At)
+    (86, ("Friedrich Ernst Dorn", 1900)),  # Radon (Rn)
+    (87, ("Marguerite Perey", 1939)),  # Francium (Fr)
+    (88, ("Pierre and Marie Curie", 1898)),  # Radium (Ra)
+    (89, ("Friedrich Oskar Giesel", 1899)),  # Actinium (Ac)
+    (90, ("Jöns Jacob Berzelius", 1828)),  # Thorium (Th)
+    (91, ("Kasimir Fajans and Oswald Helmuth Göhring", 1913)),  # Protactinium (Pa)
+    (92, ("Martin Heinrich Klaproth", 1789)),  # Uranium (U)
+    (93, ("Edwin McMillan and Philip H. Abelson", 1940)),  # Neptunium (Np)
+    (94, ("Glenn T. Seaborg, Arthur C. Wahl, Joseph W. Kennedy, and Edwin M. McMillan", 1940)),  # Plutonium (Pu)
+    (95, ("Glenn T. Seaborg, Ralph A. James, and Albert Ghiorso", 1944)),  # Americium (Am)
+    (96, ("Glenn T. Seaborg, Ralph A. James, and Albert Ghiorso", 1944)),  # Curium (Cm)
+    (97, ("Lawrence Berkeley National Laboratory", 1949)),  # Berkelium (Bk)
+    (98, ("University of California, Berkeley", 1950)),  # Californium (Cf)
+    (99, ("Lawrence Berkeley National Laboratory", 1952)),  # Einsteinium (Es)
+    (100, ("Albert Ghiorso", 1952)),  # Fermium (Fm)
+    (101, ("Albert Ghiorso", 1955)),  # Mendelevium (Md)
+    (102, ("Albert Ghiorso", 1958)),  # Nobelium (No)
+    (103, ("Lawrence Berkeley National Laboratory", 1961)),  # Lawrencium (Lr)
+    (104, ("Joint Institute for Nuclear Research", 1969)),  # Rutherfordium (Rf)
+    (105, ("Joint Institute for Nuclear Research", 1970)),  # Dubnium (Db)
+    (106, ("Joint Institute for Nuclear Research", 1974)),  # Seaborgium (Sg)
+    (107, ("Joint Institute for Nuclear Research", 1976)),  # Bohrium (Bh)
+    (108, ("Gesellschaft für Schwerionenforschung", 1982)),  # Hassium (Hs)
+    (109, ("Gesellschaft für Schwerionenforschung", 1982)),  # Meitnerium (Mt)
+    (110, ("Gesellschaft für Schwerionenforschung", 1994)),  # Darmstadtium (Ds)
+    (111, ("Gesellschaft für Schwerionenforschung", 1994)),  # Roentgenium (Rg)
+    (112, ("Gesellschaft für Schwerionenforschung", 1996)),  # Copernicium (Cn)
+    (113, ("Riken", 2003)),  # Nihonium (Nh)
+    (114, ("Joint Institute for Nuclear Research", 1999)),  # Flerovium (Fl)
+    (115, ("Joint Institute for Nuclear Research", 2003)),  # Moscovium (Mc)
+    (116, ("Joint Institute for Nuclear Research", 2000)),  # Livermorium (Lv)
+    (117, ("Joint Institute for Nuclear Research", 2010)),  # Tennessine (Ts)
+    (118, ("Joint Institute for Nuclear Research", 2002)),  # Oganesson (Og)
+]
+
+
+
+
+#celcius,fehreinheit,kelvin
+melting_points_of_elements = [
+    (1, (-259.14, -434.45, 14.01)),  # Hydrogen (H)
+    (2, (-272.2, -458.0, 20.28)),  # Helium (He)
+    (3, (180.54, 356.97, 453.69)),  # Lithium (Li)
+    (4, (1278, 2332.4, 1560)),  # Beryllium (Be)
+    (5, (2300, 4172, 2345)),  # Boron (B)
+    (6, (3550, 6422, 3823)),  # Carbon (C)
+    (7, (-210, -346, 63.15)),  # Nitrogen (N)
+    (8, (-218.79, -361.82, 54.36)),  # Oxygen (O)
+    (9, (-219.62, -363.32, 53.53)),  # Fluorine (F)
+    (10, (-248.59, -415.46, 24.56)),  # Neon (Ne)
+    (11, (97.72, 207.9, 370.87)),  # Sodium (Na)
+    (12, (649, 1200, 922)),  # Magnesium (Mg)
+    (13, (660.32, 1220.58, 933.47)),  # Aluminum (Al)
+    (14, (1414, 2577.2, 1687)),  # Silicon (Si)
+    (15, (44.15, 111.47, 317.3)),  # Phosphorus (P)
+    (16, (115.21, 239.38, 388.36)),  # Sulfur (S)
+    (17, (-101.5, -150.7, 53.48)),  # Chlorine (Cl)
+    (18, (-189.34, -308.81, 83.8)),  # Argon (Ar)
+    (19, (63.38, 146.08, 370.87)),  # Potassium (K)
+    (20, (842, 1547.6, 1115)),  # Calcium (Ca)
+    (21, (1539, 2802.2, 1812)),  # Scandium (Sc)
+    (22, (1668, 3034.4, 1941)),  # Titanium (Ti)
+    (23, (1910, 3470, 2183)),  # Vanadium (V)
+    (24, (1907, 3465.4, 2180)),  # Chromium (Cr)
+    (25, (1246, 2275.8, 1519)),  # Manganese (Mn)
+    (26, (1538, 2800.4, 1811)),  # Iron (Fe)
+    (27, (1495, 2723, 1768)),  # Cobalt (Co)
+    (28, (1453, 2657.4, 1728)),  # Nickel (Ni)
+    (29, (1084.62, 1984.3, 1357.77)),  # Copper (Cu)
+    (30, (419.53, 787.15, 692.68)),  # Zinc (Zn)
+    (31, (29.76, 85.57, 302.91)),  # Gallium (Ga)
+    (32, (231.93, 449.47, 505.08)),  # Germanium (Ge)
+    (33, (113.55, 236.39, 386.7)),  # Arsenic (As)
+    (34, (494, 921.2, 767)),  # Selenium (Se)
+    (35, (-7.3, 18.5, 239.11)),  # Bromine (Br)
+    (36, (-157.2, -250.96, 115.78)),  # Krypton (Kr)
+    (37, (38.89, 102.0, 312.94)),  # Rubidium (Rb)
+    (38, (769, 1416.2, 1042)),  # Strontium (Sr)
+    (39, (1522, 2771.6, 1799)),  # Yttrium (Y)
+    (40, (1852, 3365.6, 2125)),  # Zirconium (Zr)
+    (41, (2742, 4967.6, 3017)),  # Niobium (Nb)
+    (42, (2896, 5244.8, 3169)),  # Molybdenum (Mo)
+    (43, (2430, 4406, 2703)),  # Technetium (Tc)
+    (44, (2334, 4233.2, 2607)),  # Ruthenium (Ru)
+    (45, (1966, 3560.8, 2239)),  # Rhodium (Rh)
+    (46, (1554.9, 2830.8, 1827.05)),  # Palladium (Pd)
+    (47, (961.78, 1763.2, 1234.93)),  # Silver (Ag)
+    (48, (321.07, 609.92, 594.22)),  # Cadmium (Cd)
+    (49, (156.6, 313.88, 429.75)),  # Indium (In)
+    (50, (231.93, 449.47, 505.08)),  # Tin (Sn)
+    (51, (630.63, 1167.13, 903.78)),  # Antimony (Sb)
+    (52, (449.51, 841.12, 722.66)),  # Tellurium (Te)
+    (53, (113.7, 236.66, 386.85)),  # Iodine (I)
+    (54, (-218.79, -361.82, 53.53)),  # Xenon (Xe)
+    (55, (28.44, 83.19, 301.59)),  # Cesium (Cs)
+    (56, (727, 1340.6, 1013)),  # Barium (Ba)
+    (57, (920, 1688, 1193)),  # Lanthanum (La)
+    (58, (798.9, 1469.02, 1072.05)),  # Cerium (Ce)
+    (59, (931, 1707, 1208)),  # Praseodymium (Pr)
+    (60, (1021, 1869.8, 1294)),  # Neodymium (Nd)
+    (61, (1042, 1907.6, 1315)),  # Promethium (Pm)
+    (62, (1072, 1961.6, 1345)),  # Samarium (Sm)
+    (63, (822, 1511.6, 1095)),  # Europium (Eu)
+    (64, (1313, 2395.4, 1586)),  # Gadolinium (Gd)
+    (65, (1356, 2472.8, 1629)),  # Terbium (Tb)
+    (66, (1412, 2573.6, 1671)),  # Dysprosium (Dy)
+    (67, (1461, 2661.8, 1720)),  # Holmium (Ho)
+    (68, (1522, 2771.6, 1799)),  # Erbium (Er)
+    (69, (1545, 2825, 1572)),  # Thulium (Tm)
+    (70, (824, 1515.2, 1099)),  # Ytterbium (Yb)
+    (71, (1652, 3005.6, 1925)),  # Lutetium (Lu)
+    (72, (2506, 4542.8, 2779)),  # Hafnium (Hf)
+    (73, (3290, 5954, 3560)),  # Tantalum (Ta)
+    (74, (3695, 6683, 3422)),  # Tungsten (W)
+    (75, (3459, 6258.2, 3732)),  # Rhenium (Re)
+    (76, (3306, 5972.8, 3033)),  # Osmium (Os)
+    (77, (2719, 4926.2, 2944)),  # Iridium (Ir)
+    (78, (2041.4, 3706.5, 1514.6)),  # Platinum (Pt)
+    (79, (1064.18, 1947.52, 1337.33)),  # Gold (Au)
+    (80, (-38.83, -37.89, 234.32)),  # Mercury (Hg)
+    (81, (304.0, 579.2, 577.15)),  # Thallium (Tl)
+    (82, (327.46, 621.43, 600.61)),  # Lead (Pb)
+    (83, (271.5, 520.7, 544.65)),  # Bismuth (Bi)
+    (84, (254, 489.2, 527.15)),  # Polonium (Po)
+    (85, (302, 575.6, 575.15)),  # Astatine (At)
+    (86, (-71, -95.8, 202.15)),  # Radon (Rn)
+    (87, (27, 80.6, 300.15)),  # Francium (Fr)
+    (88, (700, 1292, 973)),  # Radium (Ra)
+    (89, (1050, 1922, 1343)),  # Actinium (Ac)
+    (90, (1750, 3182, 1546)),  # Thorium (Th)
+    (91, (1568, 2854.4, 1840)),  # Protactinium (Pa)
+    (92, (1132.2, 2070, 1405.35)),  # Uranium (U)
+    (93, (640, 1184, 913)),  # Neptunium (Np)
+    (94, (640, 1164, 913)),  # Plutonium (Pu)
+    (95, (994, 1821.2, 1267)),  # Americium (Am)
+    (96, (1340, 2444, 1613)),  # Curium (Cm)
+    (97, (986, 1806.8, 1259)),  # Berkelium (Bk)
+    (98, (900, 1652, 1173)),  # Californium (Cf)
+    (99, (860, 1580, 1133)),  # Einsteinium (Es)
+    (100, (1527, 2780.6, 1800)),  # Fermium (Fm)
+    (101, (1100, 2012, 1373)),  # Mendelevium (Md)
+    (102, (1100, 2012, 1373)),  # Nobelium (No)
+    (103, (1900, 3452, 2173)),  # Lawrencium (Lr)
+    (104, (2100, 3812, 2300)),  # Rutherfordium (Rf)
+    (105, (unknown, unknown, unknown)),  # Dubnium (Db)
+    (106, (unknown, unknown, unknown)),  # Seaborgium (Sg)
+    (107, (unknown, unknown, unknown)),  # Bohrium (Bh)
+    (108, (unknown, unknown, unknown)),  # Hassium (Hs)
+    (109, (unknown, unknown, unknown)),  # Meitnerium (Mt)
+    (110, (unknown, unknown, unknown)),  # Darmstadtium (Ds)
+    (111, (unknown, unknown, unknown)),  # Roentgenium (Rg)
+    (112, (unknown, unknown, unknown)),  # Copernicium (Cn)
+    (113, (unknown, unknown, unknown)),  # Nihonium (Nh)
+    (114, (unknown, unknown, unknown)),  # Flerovium (Fl)
+    (115, (unknown, unknown, unknown)),  # Moscovium (Mc)
+    (116, (unknown, unknown, unknown)),  # Livermorium (Lv)
+    (117, (unknown, unknown, unknown)),  # Tennessine (Ts)
+    (118, (unknown, unknown, unknown)),  # Oganesson (Og)
+]
+
+
+
+
+
+boiling_points_of_elements = [
+    (1, (-252.87, -423.17, 20.28)),  # Hydrogen (H)
+    (2, (-268.93, -452.07, 4.22)),  # Helium (He)
+    (3, (1342, 2448, 1615)),  # Lithium (Li)
+    (4, (2970, 5378, 2348)),  # Beryllium (Be)
+    (5, (3927, 7101, 4273)),  # Boron (B)
+    (6, (4827, 8720.6, 5100)),  # Carbon (C)
+    (7, (-195.79, -320.42, 77.36)),  # Nitrogen (N)
+    (8, (-182.95, -297.31, 90.2)),  # Oxygen (O)
+    (9, (-188.11, -306.6, 85.03)),  # Fluorine (F)
+    (10, (-246.05, -410.89, 27.07)),  # Neon (Ne)
+    (11, (883, 1621.4, 1156)),  # Sodium (Na)
+    (12, (1484, 2703.2, 1557)),  # Magnesium (Mg)
+    (13, (2467, 4472.6, 2792)),  # Aluminum (Al)
+    (14, (3265, 5909, 3538)),  # Silicon (Si)
+    (15, (280.5, 536.9, 554.7)),  # Phosphorus (P)
+    (16, (444.67, 832.41, 717.8)),  # Sulfur (S)
+    (17, (-34.04, -29.27, 238.65)),  # Chlorine (Cl)
+    (18, (-185.85, -302.53, 87.45)),  # Argon (Ar)
+    (19, (770, 1418, 1041)),  # Potassium (K)
+    (20, (1484, 2703.2, 1378)),  # Calcium (Ca)
+    (21, (2835, 5135, 3108)),  # Scandium (Sc)
+    (22, (3287, 5948.6, 3010)),  # Titanium (Ti)
+    (23, (3380, 6116, 2303)),  # Vanadium (V)
+    (24, (2672, 4841.6, 2270)),  # Chromium (Cr)
+    (25, (2061, 3741.8, 1517)),  # Manganese (Mn)
+    (26, (2750, 4982, 1809)),  # Iron (Fe)
+    (27, (2870, 5198, 1768)),  # Cobalt (Co)
+    (28, (2927, 5301.6, 1728)),  # Nickel (Ni)
+    (29, (2562, 4643.6, 1357)),  # Copper (Cu)
+    (30, (907, 1664.6, 1180)),  # Zinc (Zn)
+    (31, (2204, 3999.2, 2676)),  # Gallium (Ga)
+    (32, (2835, 5135, 3108)),  # Germanium (Ge)
+    (33, (613, 1135.4, 887)),  # Arsenic (As)
+    (34, (958, 1756.4, 684)),  # Selenium (Se)
+    (35, (-34.04, -29.27, 239.11)),  # Bromine (Br)
+    (36, (-153.22, -243.8, 119.93)),  # Krypton (Kr)
+    (37, (686, 1266, 961)),  # Rubidium (Rb)
+    (38, (1384, 2523.2, 1655)),  # Strontium (Sr)
+    (39, (3336, 6037.6, 2306)),  # Yttrium (Y)
+    (40, (4377, 7910.6, 2128)),  # Zirconium (Zr)
+    (41, (5731, 10349.8, 2996)),  # Niobium (Nb)
+    (42, (4912, 8883.6, 4740)),  # Molybdenum (Mo)
+    (43, (4538, 8199.4, 2880)),  # Technetium (Tc)
+    (44, (4423, 7993.4, 2607)),  # Ruthenium (Ru)
+    (45, (3968, 7184.4, 2237)),  # Rhodium (Rh)
+    (46, (3236, 5861.3, 1827.05)),  # Palladium (Pd)
+    (47, (2212.17, 4013.906, 2345)),  # Silver (Ag)
+    (48, (767, 1412.6, 594.22)),  # Cadmium (Cd)
+    (49, (2067, 3752.6, 2022)),  # Indium (In)
+    (50, (2875, 5207, 2875)),  # Tin (Sn)
+    (51, (1860, 3380, 1860)),  # Antimony (Sb)
+    (52, (1261, 2301.8, 988)),  # Tellurium (Te)
+    (53, (457.4, 855.32, 386.85)),  # Iodine (I)
+    (54, (-185.85, -302.53, 87.45)),  # Xenon (Xe)
+    (55, (671, 1239.8, 944)),  # Cesium (Cs)
+    (56, (1870, 3398, 1402)),  # Barium (Ba)
+    (57, (3469, 6276.2, 1743)),  # Lanthanum (La)
+    (58, (3716, 6730.8, 1795)),  # Cerium (Ce)
+    (59, (3793, 6859.4, 1439)),  # Praseodymium (Pr)
+    (60, (3347, 6056.6, 1297)),  # Neodymium (Nd)
+    (61, (3273, 5923.4, 1315)),  # Promethium (Pm)
+    (62, (2067, 3752.6, 2173)),  # Samarium (Sm)
+    (63, (1529, 2784.2, 1598)),  # Europium (Eu)
+    (64, (3273, 5923.4, 1586)),  # Gadolinium (Gd)
+    (65, (3396, 6154.8, 1629)),  # Terbium (Tb)
+    (66, (2840, 5144, 1680)),  # Dysprosium (Dy)
+    (67, (2993, 5419.4, 1740)),  # Holmium (Ho)
+    (68, (3141, 5685.8, 1802)),  # Erbium (Er)
+    (69, (2223, 4033.4, 1818)),  # Thulium (Tm)
+    (70, (1469, 2680.2, 1092)),  # Ytterbium (Yb)
+    (71, (3675, 6647, 1925)),  # Lutetium (Lu)
+    (72, (4876, 8808.8, 2503)),  # Hafnium (Hf)
+    (73, (5731, 10349.8, 5731)),  # Tantalum (Ta)
+    (74, (5828, 10582.4, 6203)),  # Tungsten (W)
+    (75, (5869, 10636.2, 5880)),  # Rhenium (Re)
+    (76, (5285, 9545, 3306)),  # Osmium (Os)
+    (77, (4701, 8493.8, 2719)),  # Iridium (Ir)
+    (78, (3825, 6917, 3875)),  # Platinum (Pt)
+    (79, (3129, 5664.2, 3129)),  # Gold (Au)
+    (80, (357, 674.6, 629.75)),  # Mercury (Hg)
+    (81, (1473, 2673.4, 1746)),  # Thallium (Tl)
+    (82, (1749, 3180.2, 2022)),  # Lead (Pb)
+    (83, (1564, 2847.2, 1837)),  # Bismuth (Bi)
+    (84, (962, 1763.6, 527.15)),  # Polonium (Po)
+    (85, (337, 638.6, 610.15)),  # Astatine (At)
+    (86, (-61.8, -79.2, 211.35)),  # Radon (Rn)
+    (87, (677, 1250.6, 600.15)),  # Francium (Fr)
+    (88, (1737, 3158.6, 1413)),  # Radium (Ra)
+    (89, (3471, 6299.8, 2607)),  # Actinium (Ac)
+    (90, (5061, 9141.8, 5061)),  # Thorium (Th)
+    (91, (4030, 7286, 2000)),  # Protactinium (Pa)
+    (92, (4404, 7960.8, 1408)),  # Uranium (U)
+    (93, (3902, 7055.6, 2396)),  # Neptunium (Np)
+    (94, (3232, 5850.6, 2132)),  # Plutonium (Pu)
+    (95, (2607, 4724.6, 1449)),  # Americium (Am)
+    (96, (3100, 5612, 1700)),  # Curium (Cm)
+    (97, (2900, 5242, 1439)),  # Berkelium (Bk)
+    (98, (1743, 3169.4, 1013)),  # Californium (Cf)
+    (99, (1269, 2316.2, 1033)),  # Einsteinium (Es)
+    (100, (unknown, unknown, unknown)),  # Fermium (Fm)
+    (101, (unknown, unknown, unknown)),  # Mendelevium (Md)
+    (102, (unknown, unknown, unknown)),  # Nobelium (No)
+    (103, (unknown, unknown, unknown)),  # Lawrencium (Lr)
+    (104, (unknown, unknown, unknown)),  # Rutherfordium (Rf)
+    (105, (unknown, unknown, unknown)),  # Dubnium (Db)
+    (106, (unknown, unknown, unknown)),  # Seaborgium (Sg)
+    (107, (unknown, unknown, unknown)),  # Bohrium (Bh)
+    (108, (unknown, unknown, unknown)),  # Hassium (Hs)
+    (109, (unknown, unknown, unknown)),  # Meitnerium (Mt)
+    (110, (unknown, unknown, unknown)),  # Darmstadtium (Ds)
+    (111, (unknown, unknown, unknown)),  # Roentgenium (Rg)
+    (112, (unknown, unknown, unknown)),  # Copernicium (Cn)
+    (113, (unknown, unknown, unknown)),  # Nihonium (Nh)
+    (114, (unknown, unknown, unknown)),  # Flerovium (Fl)
+    (115, (unknown, unknown, unknown)),  # Moscovium (Mc)
+    (116, (unknown, unknown, unknown)),  # Livermorium (Lv)
+    (117, (unknown, unknown, unknown)),  # Tennessine (Ts)
+    (118, (unknown, unknown, unknown)),  # Oganesson (Og)
+]
+
+
+
+
+lattice_enthalpies_of_elements = [
+    (1, 52.8),  # Hydrogen (H)
+    (2, "N/A"),  # Helium (He)
+    (3, 83),  # Lithium (Li)
+    (4, 320),  # Beryllium (Be)
+    (5, 441),  # Boron (B)
+    (6, "N/A"),  # Carbon (C)
+    (7, "N/A"),  # Nitrogen (N)
+    (8, "N/A"),  # Oxygen (O)
+    (9, "N/A"),  # Fluorine (F)
+    (10, "N/A"),  # Neon (Ne)
+    (11, 322),  # Sodium (Na)
+    (12, 145),  # Magnesium (Mg)
+    (13, 81),  # Aluminum (Al)
+    (14, 50.5),  # Silicon (Si)
+    (15, 44),  # Phosphorus (P)
+    (16, 200),  # Sulfur (S)
+    (17, 175),  # Chlorine (Cl)
+    (18, "N/A"),  # Argon (Ar)
+    (19, 680),  # Potassium (K)
+    (20, 178),  # Calcium (Ca)
+    (21, 490),  # Scandium (Sc)
+    (22, 648),  # Titanium (Ti)
+    (23, 651),  # Vanadium (V)
+    (24, 686),  # Chromium (Cr)
+    (25, 720),  # Manganese (Mn)
+    (26, 760),  # Iron (Fe)
+    (27, 760),  # Cobalt (Co)
+    (28, 730),  # Nickel (Ni)
+    (29, 710),  # Copper (Cu)
+    (30, 730),  # Zinc (Zn)
+    (31, 380),  # Gallium (Ga)
+    (32, 141),  # Germanium (Ge)
+    (33, 107),  # Arsenic (As)
+    (34, 90),  # Selenium (Se)
+    (35, 95),  # Bromine (Br)
+    (36, "N/A"),  # Krypton (Kr)
+    (37, 670),  # Rubidium (Rb)
+    (38, 142),  # Strontium (Sr)
+    (39, 620),  # Yttrium (Y)
+    (40, 580),  # Zirconium (Zr)
+    (41, 590),  # Niobium (Nb)
+    (42, 630),  # Molybdenum (Mo)
+    (43, 600),  # Technetium (Tc)
+    (44, 580),  # Ruthenium (Ru)
+    (45, 570),  # Rhodium (Rh)
+    (46, 570),  # Palladium (Pd)
+    (47, 590),  # Silver (Ag)
+    (48, 570),  # Cadmium (Cd)
+    (49, 510),  # Indium (In)
+    (50, 500),  # Tin (Sn)
+    (51, 450),  # Antimony (Sb)
+    (52, 480),  # Tellurium (Te)
+    (53, 190),  # Iodine (I)
+    (54, "N/A"),  # Xenon (Xe)
+    (55, 590),  # Cesium (Cs)
+    (56, 490),  # Barium (Ba)
+    (57, 470),  # Lanthanum (La)
+    (58, 330),  # Cerium (Ce)
+    (59, 320),  # Praseodymium (Pr)
+    (60, 320),  # Neodymium (Nd)
+    (61, 320),  # Promethium (Pm)
+    (62, 320),  # Samarium (Sm)
+    (63, 320),  # Europium (Eu)
+    (64, 320),  # Gadolinium (Gd)
+    (65, 320),  # Terbium (Tb)
+    (66, 320),  # Dysprosium (Dy)
+    (67, 320),  # Holmium (Ho)
+    (68, 320),  # Erbium (Er)
+    (69, 320),  # Thulium (Tm)
+    (70, 320),  # Ytterbium (Yb)
+    (71, 320),  # Lutetium (Lu)
+    (72, 320),  # Hafnium (Hf)
+    (73, 320),  # Tantalum (Ta)
+    (74, 320),  # Tungsten (W)
+    (75, 320),  # Rhenium (Re)
+    (76, 320),  # Osmium (Os)
+    (77, 320),  # Iridium (Ir)
+    (78, 320),  # Platinum (Pt)
+    (79, 320),  # Gold (Au)
+    (80, 320),  # Mercury (Hg)
+    (81, 320),  # Thallium (Tl)
+    (82, 320),  # Lead (Pb)
+    (83, 320),  # Bismuth (Bi)
+    (84, 320),  # Polonium (Po)
+    (85, 320),  # Astatine (At)
+    (86, "N/A"),  # Radon (Rn)
+    (87, 320),  # Francium (Fr)
+    (88, 320),  # Radium (Ra)
+    (89, "N/A"),  # Actinium (Ac)
+    (90, 320),  # Thorium (Th)
+    (91, 320),  # Protactinium (Pa)
+    (92, 320),  # Uranium (U)
+    (93, 320),  # Neptunium (Np)
+    (94, 320),  # Plutonium (Pu)
+    (95, 320),  # Americium (Am)
+    (96, 320),  # Curium (Cm)
+    (97, 320),  # Berkelium (Bk)
+    (98, 320),  # Californium (Cf)
+    (99, 320),  # Einsteinium (Es)
+    (100, "N/A"),  # Fermium (Fm)
+    (101, "N/A"),  # Mendelevium (Md)
+    (102, "N/A"),  # Nobelium (No)
+    (103, "N/A"),  # Lawrencium (Lr)
+    (104, "N/A"),  # Rutherfordium (Rf)
+    (105, "N/A"),  # Dubnium (Db)
+    (106, "N/A"),  # Seaborgium (Sg)
+    (107, "N/A"),  # Bohrium (Bh)
+    (108, "N/A"),  # Hassium (Hs)
+    (109, "N/A"),  # Meitnerium (Mt)
+    (110, "N/A"),  # Darmstadtium (Ds)
+    (111, "N/A"),  # Roentgenium (Rg)
+    (112, "N/A"),  # Copernicium (Cn)
+    (113, "N/A"),  # Nihonium (Nh)
+    (114, "N/A"),  # Flerovium (Fl)
+    (115, "N/A"),  # Moscovium (Mc)
+    (116, "N/A"),  # Livermorium (Lv)
+    (117, "N/A"),  # Tennessine (Ts)
+    (118, "N/A"),  # Oganesson (Og)
+]
+
+
+
+
+ionization_enthalpies_of_elements = [
+    (1, 1312),  # Hydrogen (H)
+    (2, 2372.3),  # Helium (He)
+    (3, 520),  # Lithium (Li)
+    (4, 899.5),  # Beryllium (Be)
+    (5, 800.6),  # Boron (B)
+    (6, 1086.5),  # Carbon (C)
+    (7, 1402.3),  # Nitrogen (N)
+    (8, 1313.9),  # Oxygen (O)
+    (9, 1681),  # Fluorine (F)
+    (10, 2080.7),  # Neon (Ne)
+    (11, 495.8),  # Sodium (Na)
+    (12, 737.7),  # Magnesium (Mg)
+    (13, 577.5),  # Aluminum (Al)
+    (14, 786.5),  # Silicon (Si)
+    (15, 1011.8),  # Phosphorus (P)
+    (16, 999.6),  # Sulfur (S)
+    (17, 1251.2),  # Chlorine (Cl)
+    (18, 1520.6),  # Argon (Ar)
+    (19, 418.8),  # Potassium (K)
+    (20, 590),  # Calcium (Ca)
+    (21, 633.1),  # Scandium (Sc)
+    (22, 658.8),  # Titanium (Ti)
+    (23, 650.9),  # Vanadium (V)
+    (24, 717.3),  # Chromium (Cr)
+    (25, 762.5),  # Manganese (Mn)
+    (26, 760.4),  # Iron (Fe)
+    (27, 737.1),  # Cobalt (Co)
+    (28, 745.5),  # Nickel (Ni)
+    (29, 906.4),  # Copper (Cu)
+    (30, 578.8),  # Zinc (Zn)
+    (31, 762.5),  # Gallium (Ga)
+    (32, 947),  # Germanium (Ge)
+    (33, 941),  # Arsenic (As)
+    (34, 941),  # Selenium (Se)
+    (35, 1139.9),  # Bromine (Br)
+    (36, 1350.8),  # Krypton (Kr)
+    (37, 403),  # Rubidium (Rb)
+    (38, 549.5),  # Strontium (Sr)
+    (39, 600),  # Yttrium (Y)
+    (40, 640.1),  # Zirconium (Zr)
+    (41, 652.1),  # Niobium (Nb)
+    (42, 684.3),  # Molybdenum (Mo)
+    (43, 702),  # Technetium (Tc)
+    (44, 710.2),  # Ruthenium (Ru)
+    (45, 720.4),  # Rhodium (Rh)
+    (46, 804.4),  # Palladium (Pd)
+    (47, 731),  # Silver (Ag)
+    (48, 868),  # Cadmium (Cd)
+    (49, 558.3),  # Indium (In)
+    (50, 708.6),  # Tin (Sn)
+    (51, 834),  # Antimony (Sb)
+    (52, 869),  # Tellurium (Te)
+    (53, 1008.4),  # Iodine (I)
+    (54, 1170.4),  # Xenon (Xe)
+    (55, 376.6),  # Cesium (Cs)
+    (56, 503),  # Barium (Ba)
+    (57, 538.1),  # Lanthanum (La)
+    (58, 534.4),  # Cerium (Ce)
+    (59, 527),  # Praseodymium (Pr)
+    (60, 533.1),  # Neodymium (Nd)
+    (61, 540),  # Promethium (Pm)
+    (62, 545),  # Samarium (Sm)
+    (63, 547),  # Europium (Eu)
+    (64, 593.4),  # Gadolinium (Gd)
+    (65, 565.8),  # Terbium (Tb)
+    (66, 573),  # Dysprosium (Dy)
+    (67, 581),  # Holmium (Ho)
+    (68, 589.3),  # Erbium (Er)
+    (69, 596.7),  # Thulium (Tm)
+    (70, 603.4),  # Ytterbium (Yb)
+    (71, 523.5),  # Lutetium (Lu)
+    (72, 558.3),  # Hafnium (Hf)
+    (73, 573.1),  # Tantalum (Ta)
+    (74, 589.3),  # Tungsten (W)
+    (75, 559.7),  # Rhenium (Re)
+    (76, 580),  # Osmium (Os)
+    (77, 627.6),  # Iridium (Ir)
+    (78, 566),  # Platinum (Pt)
+    (79, 587.4),  # Gold (Au)
+    (80, 715.6),  # Mercury (Hg)
+    (81, 703),  # Thallium (Tl)
+    (82, 812.1),  # Lead (Pb)
+    (83, 703),  # Bismuth (Bi)
+    (84, 812.1),  # Polonium (Po)
+    (85, 903.3),  # Astatine (At)
+    (86, 1037),  # Radon (Rn)
+    (87, 376.6),  # Francium (Fr)
+    (88, 509.3),  # Radium (Ra)
+    (89, 499),  # Actinium (Ac)
+    (90, 587),  # Thorium (Th)
+    (91, 568),  # Protactinium (Pa)
+    (92, 598.5),  # Uranium (U)
+    (93, 605.4),  # Neptunium (Np)
+    (94, 584.7),  # Plutonium (Pu)
+    (95, 578),  # Americium (Am)
+    (96, 581),  # Curium (Cm)
+    (97, 601),  # Berkelium (Bk)
+    (98, 608.4),  # Californium (Cf)
+    (99, 619),  # Einsteinium (Es)
+    (100, "N/A"),  # Fermium (Fm)
+    (101, "N/A"),  # Mendelevium (Md)
+    (102, "N/A"),  # Nobelium (No)
+    (103, "N/A"),  # Lawrencium (Lr)
+    (104, "N/A"),  # Rutherfordium (Rf)
+    (105, "N/A"),  # Dubnium (Db)
+    (106, "N/A"),  # Seaborgium (Sg)
+    (107, "N/A"),  # Bohrium (Bh)
+    (108, "N/A"),  # Hassium (Hs)
+    (109, "N/A"),  # Meitnerium (Mt)
+    (110, "N/A"),  # Darmstadtium (Ds)
+    (111, "N/A"),  # Roentgenium (Rg)
+    (112, "N/A"),  # Copernicium (Cn)
+    (113, "N/A"),  # Nihonium (Nh)
+    (114, "N/A"),  # Flerovium (Fl)
+    (115, "N/A"),  # Moscovium (Mc)
+    (116, "N/A"),  # Livermorium (Lv)
+    (117, "N/A"),  # Tennessine (Ts)
+    (118, "N/A"),  # Oganesson (Og)
+]
+
+
+
+
+ionization_enthalpies_of_elements = [
+    (1, [(1312, "1st")]),  # Hydrogen (H)
+    (2, [(2372.3, "1st")]),  # Helium (He)
+    (3, [(520, "1st"), (7298.1, "2nd")]),  # Lithium (Li)
+    (4, [(899.5, "1st"), (1757.1, "2nd")]),  # Beryllium (Be)
+    (5, [(800.6, "1st"), (2427.1, "2nd")]),  # Boron (B)
+    (6, [(1086.5, "1st"), (2352.6, "2nd")]),  # Carbon (C)
+    (7, [(1402.3, "1st"), (2856, "2nd")]),  # Nitrogen (N)
+    (8, [(1313.9, "1st"), (3388.3, "2nd")]),  # Oxygen (O)
+    (9, [(1681, "1st"), (3374.2, "2nd")]),  # Fluorine (F)
+    (10, [(2080.7, "1st"), (3952.3, "2nd")]),  # Neon (Ne)
+    (11, [(495.8, "1st"), (4562, "2nd"), (6910.3, "3rd")]),  # Sodium (Na)
+    (12, [(737.7, "1st"), (1450.7, "2nd"), (7732.7, "3rd")]),  # Magnesium (Mg)
+    (13, [(577.5, "1st"), (1816.7, "2nd"), (2744.8, "3rd"), (11577, "4th")]),  # Aluminum (Al)
+    (14, [(786.5, "1st"), (1577.1, "2nd"), (3231.6, "3rd"), (4356, "4th")]),  # Silicon (Si)
+    (15, [(1011.8, "1st"), (1907, "2nd"), (2914.1, "3rd"), (4963.6, "4th")]),  # Phosphorus (P)
+    (16, [(999.6, "1st"), (2251, "2nd"), (3357, "3rd"), (4556, "4th")]),  # Sulfur (S)
+    (17, [(1251.2, "1st"), (2298, "2nd"), (3822, "3rd"), (5158.6, "4th")]),  # Chlorine (Cl)
+    (18, [(1520.6, "1st"), (2665.8, "2nd"), (3931, "3rd"), (5771, "4th")]),  # Argon (Ar)
+    (19, [(418.8, "1st"), (3052, "2nd"), (4578.1, "3rd"), (6276.6, "4th"), (12363, "5th")]),  # Potassium (K)
+    (20, [(590, "1st"), (1110, "2nd"), (1846.7, "3rd"), (2837.4, "4th"), (4120.4, "5th")]),  # Calcium (Ca)
+    (21, [(633.1, "1st"), (1235, "2nd"), (2388.6, "3rd"), (7090.6, "4th"), (8843, "5th")]),  # Scandium (Sc)
+    (22, [(658.8, "1st"), (1309.8, "2nd"), (2652.5, "3rd"), (4174.6, "4th"), (9587, "5th")]),  # Titanium (Ti)
+    (23, [(650.9, "1st"), (1402.3, "2nd"), (2856, "3rd"), (4574, "4th"), (8772.3, "5th")]),  # Vanadium (V)
+    (24, [(717.3, "1st"), (1350.8, "2nd"), (2676.5, "3rd"), (4202.6, "4th"), (8774, "5th")]),  # Chromium (Cr)
+    (25, [(762.5, "1st"), (1561.9, "2nd"), (2957, "3rd"), (5290, "4th"), (10490, "5th")]),  # Manganese (Mn)
+    (26, [(760.4, "1st"), (1648, "2nd"), (3232, "3rd"), (4956, "4th"), (7181, "5th")]),  # Iron (Fe)
+    (27, [(737.1, "1st"), (1753, "2nd"), (3395, "3rd"), (5300, "4th"), (7240, "5th")]),  # Cobalt (Co)
+    (28, [(745.5, "1st"), (1957.9, "2nd"), (3555, "3rd"), (5536, "4th"), (7700, "5th")]),  # Nickel (Ni)
+    (29, [(906.4, "1st"), (1733.3, "2nd"), (3180, "3rd"), (4354.3, "4th"), (7188, "5th")]),  # Copper (Cu)
+    (30, [(578.8, "1st"), (1979.3, "2nd"), (2866.3, "3rd"), (6039.3, "4th"), (7400.3, "5th")]),  # Zinc (Zn)
+    (31, [(762.5, "1st"), (1580.9, "2nd"), (3239.6, "3rd"), (4354.2, "4th"), (6068.3, "5th")]),  # Gallium (Ga)
+    (32, [(947, "1st"), (1797, "2nd"), (2735.5, "3rd"), (4835.5, "4th"), (6027, "5th")]),  # Germanium (Ge)
+    (33, [(941, "1st"), (2045, "2nd"), (2987, "3rd"), (4144, "4th"), (6590, "5th")]),  # Arsenic (As)
+    (34, [(941, "1st"), (2046.4, "2nd"), (2973.7, "3rd"), (4144, "4th"), (6590, "5th")]),  # Selenium (Se)
+    (35, [(1139.9, "1st"), (2103, "2nd"), (3473.7, "3rd"), (4561, "4th"), (5760, "5th")]),  # Bromine (Br)
+    (36, [(1350.8, "1st"), (2350.4, "2nd"), (3550.5, "3rd"), (5536, "4th"), (7639.2, "5th")]),  # Krypton (Kr)
+    (37, [(403, "1st"), (2632, "2nd"), (3859.4, "3rd"), (5447, "4th"), (7266, "5th"), (10400, "6th")]),  # Rubidium (Rb)
+    (38, [(549.5, "1st"), (1064.2, "2nd"), (4138.3, "3rd"), (5500.7, "4th"), (6910, "5th"), (8298, "6th")]),  # Strontium (Sr)
+    (39, [(600, "1st"), (1156, "2nd"), (2203, "3rd"), (7298.3, "4th"), (8784.5, "5th"), (11018, "6th")]),  # Yttrium (Y)
+    (40, [(640.1, "1st"), (1235, "2nd"), (2388.6, "3rd"), (3990, "4th"), (6400.7, "5th"), (9940, "6th")]),  # Zirconium (Zr)
+    (41, [(652.1, "1st"), (1590.6, "2nd"), (3300, "3rd"), (4417, "4th"), (7600, "5th"), (10800, "6th")]),  # Niobium (Nb)
+    (42, [(684.3, "1st"), (1560, "2nd"), (2618, "3rd"), (4418, "4th"), (6100, "5th"), (8400, "6th")]),  # Molybdenum (Mo)
+    (43, [(702, "1st"), (1470, "2nd"), (2850, "3rd"), (4578, "4th"), (7180, "5th"), (8400, "6th")]),  # Technetium (Tc)
+    (44, [(710.2, "1st"), (1620, "2nd"), (2747, "3rd"), (4470, "4th"), (6850, "5th"), (8140, "6th")]),  # Ruthenium (Ru)
+    (45, [(720.4, "1st"), (1740, "2nd"), (2997, "3rd"), (4430, "4th"), (7600, "5th"), (8900, "6th")]),  # Rhodium (Rh)
+    (46, [(804.4, "1st"), (1820.7, "2nd"), (2997, "3rd"), (4440, "4th"), (7710, "5th"), (10300, "6th")]),  # Palladium (Pd)
+    (47, [(731, "1st"), (2070, "2nd"), (3361, "3rd"), (4730, "4th"), (6770, "5th"), (8800, "6th")]),  # Silver (Ag)
+    (48, [(868, "1st"), (1790, "2nd"), (3390, "3rd"), (5300, "4th"), (7220, "5th"), (10400, "6th")]),  # Cadmium (Cd)
+    (49, [(558.3, "1st"), (1820.7, "2nd"), (2704, "3rd"), (5210, "4th"), (6850, "5th"), (8770, "6th")]),  # Indium (In)
+    (50, [(708.6, "1st"), (1411.8, "2nd"), (2943, "3rd"), (3930.3, "4th"), (7456, "5th"), (9260, "6th")]),  # Tin (Sn)
+    (51, [(834, "1st"), (1594.9, "2nd"), (2980, "3rd"), (6140, "4th"), (8232, "5th"), (10220, "6th")]),  # Antimony (Sb)
+    (52, [(869, "1st"), (1790, "2nd"), (2800, "3rd"), (4819, "4th"), (6572, "5th"), (12621, "6th")]),  # Tellurium (Te)
+    (53, [(1008.4, "1st"), (1845.9, "2nd"), (3180, "3rd"), (5220, "4th"), (7190, "5th"), (10400, "6th")]),  # Iodine (I)
+    (54, [(1170.4, "1st"), (2046.4, "2nd"), (3099.2, "3rd"), (5287, "4th"), (7380, "5th"), (10990, "6th")]),  # Xenon (Xe)
+    (55, [(376.6, "1st"), (2234.3, "2nd"), (3400, "3rd"), (5150, "4th"), (6850, "5th"), (13780, "6th"), (16650, "7th")]),  # Cesium (Cs)
+    (56, [(503, "1st"), (1757.5, "2nd"), (3600, "3rd"), (5030, "4th"), (6040, "5th"), (7300, "6th"), (8990, "7th")]),  # Barium (Ba)
+    (57, [(538.1, "1st"), (1067, "2nd"), (1850.7, "3rd"), (2679, "4th"), (4412, "5th"), (5800, "6th"), (10300, "7th")]),  # Lanthanum (La)
+    (58, [(534.4, "1st"), (1050, "2nd"), (1949, "3rd"), (3547, "4th"), (6325, "5th"), (7490, "6th"), (9320, "7th")]),  # Cerium (Ce)
+    (59, [(527, "1st"), (1020.5, "2nd"), (2086.6, "3rd"), (3761, "4th"), (5551, "5th"), (8121, "6th"), (9750, "7th")]),  # Praseodymium (Pr)
+    (60, [(533.1, "1st"), (1040, "2nd"), (1940, "3rd"), (3547, "4th"), (5114, "5th"), (5730, "6th"), (7341, "7th")]),  # Neodymium (Nd)
+    (61, [(540, "1st"), (1050, "2nd"), (2150, "3rd"), (3970, "4th"), (5720, "5th"), (8200, "6th"), (9000, "7th")]),  # Promethium (Pm)
+    (62, [(545, "1st"), (1047, "2nd"), (2130, "3rd"), (3513, "4th"), (5370, "5th"), (6040, "6th"), (12370, "7th")]),  # Samarium (Sm)
+    (63, [(547, "1st"), (1086.5, "2nd"), (2404, "3rd"), (4120, "4th"), (5300, "5th"), (6412, "6th"), (7084, "7th")]),  # Europium (Eu)
+    (64, [(593.4, "1st"), (1170, "2nd"), (1990, "3rd"), (4250, "4th"), (5400, "5th"), (7370, "6th"), (7733, "7th")]),  # Gadolinium (Gd)
+    (65, [(565.8, "1st"), (1110, "2nd"), (2114, "3rd"), (3839, "4th"), (5730, "5th"), (7970, "6th"), (8700, "7th")]),  # Terbium (Tb)
+    (66, [(573, "1st"), (1130, "2nd"), (2200, "3rd"), (3990, "4th"), (5400, "5th"), (6700, "6th"), (8240, "7th")]),  # Dysprosium (Dy)
+    (67, [(581, "1st"), (1140, "2nd"), (2200, "3rd"), (4100, "4th"), (5800, "5th"), (7200, "6th"), (8400, "7th")]),  # Holmium (Ho)
+    (68, [(589.3, "1st"), (1150, "2nd"), (2194, "3rd"), (4096, "4th"), (5890, "5th"), (7340, "6th"), (9200, "7th")]),  # Erbium (Er)
+    (69, [(596.7, "1st"), (1160, "2nd"), (2199, "3rd"), (3856, "4th"), (5920, "5th"), (7230, "6th"), (8780, "7th")]),  # Thulium (Tm)
+    (70, [(603.4, "1st"), (1170, "2nd"), (2218, "3rd"), (3839, "4th"), (5920, "5th"), (7590, "6th"), (9320, "7th")]),  # Ytterbium (Yb)
+    (71, [(523.5, "1st"), (994, "2nd"), (2130.6, "3rd"), (3749, "4th"), (5550, "5th"), (9940, "6th"), (11700, "7th")]),  # Lutetium (Lu)
+    (72, [(558.3, "1st"), (1130, "2nd"), (2040, "3rd"), (3000, "4th"), (6600, "5th"), (14300, "6th"), (19200, "7th")]),  # Hafnium (Hf)
+    (73, [(573.1, "1st"), (1060, "2nd"), (1940, "3rd"), (2758, "4th"), (6100, "5th"), (13800, "6th"), (18400, "7th")]),  # Tantalum (Ta)
+    (74, [(589.3, "1st"), (1820, "2nd"), (3300, "3rd"), (5200, "4th"), (7770, "5th"), (11800, "6th"), (15600, "7th")]),  # Tungsten (W)
+    (75, [(559.7, "1st"), (1120, "2nd"), (1850, "3rd"), (2700, "4th"), (5200, "5th"), (7700, "6th"), (10400, "7th")]),  # Rhenium (Re)
+    (76, [(596.7, "1st"), (1130, "2nd"), (1930, "3rd"), (2780, "4th"), (4700, "5th"), (7200, "6th"), (9700, "7th")]),  # Osmium (Os)
+    (77, [(627.6, "1st"), (1270, "2nd"), (2250, "3rd"), (3400, "4th"), (5300, "5th"), (7300, "6th"), (11000, "7th")]),  # Iridium (Ir)
+    (78, [(658.8, "1st"), (1320, "2nd"), (2040, "3rd"), (3100, "4th"), (5500, "5th"), (8000, "6th"), (10800, "7th")]),  # Platinum (Pt)
+    (79, [(786.5, "1st"), (1587.7, "2nd"), (3230.6, "3rd"), (4354.3, "4th"), (6165, "5th"), (8900, "6th"), (11900, "7th")]),  # Gold (Au)
+    (80, [(1007.1, "1st"), (1950.5, "2nd"), (3554, "3rd"), (5537, "4th"), (8011, "5th"), (11700, "6th"), (15500, "7th")]),  # Mercury (Hg)
+    (81, [(589.4, "1st"), (1970, "2nd"), (2877, "3rd"), (4726, "4th"), (6883, "5th"), (8770, "6th"), (10600, "7th")]),  # Thallium (Tl)
+    (82, [(716.4, "1st"), (1430, "2nd"), (1810, "3rd"), (3300, "4th"), (4400, "5th"), (7970, "6th"), (10400, "7th")]),  # Lead (Pb)
+    (83, [(703, "1st"), (1730, "2nd"), (2870, "3rd"), (3770, "4th"), (5230, "5th"), (9570, "6th"), (12200, "7th")]),  # Bismuth (Bi)
+    (84, [(812.1, "1st"), (1580.9, "2nd"), (3248.6, "3rd"), (4310, "4th"), (6140, "5th"), (8900, "6th"), (11300, "7th")]),  # Polonium (Po)
+    (85, [(890.1, "1st"), (1980.7, "2nd"), (2877, "3rd"), (4820, "4th"), (6080, "5th"), (6890, "6th"), (14390, "7th")]),  # Astatine (At)
+    (86, [(1037, "1st"), (1757.5, "2nd"), (2652.5, "3rd"), (3931, "4th"), (6177, "5th"), (8400, "6th"), (10100, "7th")]),  # Radon (Rn)
+    (87, [(375.7, "1st"), (2234.3, "2nd"), (3361, "3rd"), (4561, "4th"), (6990, "5th"), (9480, "6th"), (11900, "7th"), (53840, "8th")]),  # Francium (Fr)
+    (88, [(502.9, "1st"), (965.2, "2nd"), (3600, "3rd"), (5070, "4th"), (6240, "5th"), (8100, "6th"), (10900, "7th"), (13310, "8th")]),  # Radium (Ra)
+    (89, [(538.1, "1st"), (1067, "2nd"), (1850.7, "3rd"), (2679, "4th"), (4412, "5th"), (5800, "6th"), (11100, "7th"), (13800, "8th")]),  # Actinium (Ac)
+    (90, [(587, "1st")]),  # Thorium (Th)
+    (91, [(568, "1st")]),  # Protactinium (Pa)
+    (92, [(598.5, "1st")]),  # Uranium (U)
+    (93, [(605.4, "1st")]),  # Neptunium (Np)
+    (94, [(584.7, "1st")]),  # Plutonium (Pu)
+    (95, [(578, "1st")]),  # Americium (Am)
+    (96, [(581, "1st")]),  # Curium (Cm)
+    (97, [(601, "1st")]),  # Berkelium (Bk)
+    (98, [(608.4, "1st")]),  # Californium (Cf)
+    (99, [(619, "1st")]),  # Einsteinium (Es)
+    (100, [("N/A",)]),  # Fermium (Fm)
+    (101, [("N/A",)]),  # Mendelevium (Md)
+    (102, [("N/A",)]),  # Nobelium (No)
+    (103, [("N/A",)]),  # Lawrencium (Lr)
+    (104, [("N/A",)]),  # Rutherfordium (Rf)
+    (105, [("N/A",)]),  # Dubnium (Db)
+    (106, [("N/A",)]),  # Seaborgium (Sg)
+    (107, [("N/A",)]),  # Bohrium (Bh)
+    (108, [("N/A",)]),  # Hassium (Hs)
+    (109, [("N/A",)]),  # Meitnerium (Mt)
+    (110, [("N/A",)]),  # Darmstadtium (Ds)
+    (111, [("N/A",)]),  # Roentgenium (Rg)
+    (112, [("N/A",)]),  # Copernicium (Cn)
+    (113, [("N/A",)]),  # Nihonium (Nh)
+    (114, [("N/A",)]),  # Flerovium (Fl)
+    (115, [("N/A",)]),  # Moscovium (Mc)
+    (116, [("N/A",)]),  # Livermorium (Lv)
+    (117, [("N/A",)]),  # Tennessine (Ts)
+    (118, [("N/A",)]),  # Oganesson (Og)
+]
+
+
+
+# atomic,covalent,vanderwalls (pm or A)
+radii_of_elements = [
+    (1, (53, 37, 120)),  # Hydrogen (H)
+    (2, (31, 32, 140)),  # Helium (He)
+    (3, (193, 110, 182)),  # Lithium (Li)
+    (4, (184, 90, 173)),  # Beryllium (Be)
+    (5, (154, 82, 233)),  # Boron (B)
+    (6, (143, 77, 192)),  # Carbon (C)
+    (7, (112, 75, 170)),  # Nitrogen (N)
+    (8, (106, 73, 155)),  # Oxygen (O)
+    (9, (102, 71, 147)),  # Fluorine (F)
+    (10, (99, 69, 140)),  # Neon (Ne)
+    (11, (220, 154, 227)),  # Sodium (Na)
+    (12, (180, 130, 211)),  # Magnesium (Mg)
+    (13, (143, 121, 204)),  # Aluminum (Al)
+    (14, (135, 111, 198)),  # Silicon (Si)
+    (15, (118, 106, 190)),  # Phosphorus (P)
+    (16, (110, 102, 185)),  # Sulfur (S)
+    (17, (103, 99, 180)),  # Chlorine (Cl)
+    (18, (99, 96, 180)),  # Argon (Ar)
+    (19, (243, 192, 248)),  # Potassium (K)
+    (20, (194, 162, 215)),  # Calcium (Ca)
+    (21, (185, 141, 211)),  # Scandium (Sc)
+    (22, (167, 136, 206)),  # Titanium (Ti)
+    (23, (160, 125, 198)),  # Vanadium (V)
+    (24, (153, 127, 190)),  # Chromium (Cr)
+    (25, (139, 139, 185)),  # Manganese (Mn)
+    (26, (125, 125, 180)),  # Iron (Fe)
+    (27, (127, 125, 177)),  # Cobalt (Co)
+    (28, (124, 124, 175)),  # Nickel (Ni)
+    (29, (128, 138, 173)),  # Copper (Cu)
+    (30, (137, 131, 172)),  # Zinc (Zn)
+    (31, (145, 126, 243)),  # Gallium (Ga)
+    (32, (134, 122, 235)),  # Germanium (Ge)
+    (33, (125, 120, 227)),  # Arsenic (As)
+    (34, (115, 119, 220)),  # Selenium (Se)
+    (35, (115, 120, 217)),  # Bromine (Br)
+    (36, (112, 120, 202)),  # Krypton (Kr)
+    (37, (265, 202, 303)),  # Rubidium (Rb)
+    (38, (215, 174, 268)),  # Strontium (Sr)
+    (39, (206, 144, 243)),  # Yttrium (Y)
+    (40, (198, 136, 225)),  # Zirconium (Zr)
+    (41, (190, 125, 217)),  # Niobium (Nb)
+    (42, (180, 125, 210)),  # Molybdenum (Mo)
+    (43, (175, 126, 205)),  # Technetium (Tc)
+    (44, (165, 123, 200)),  # Ruthenium (Ru)
+    (45, (165, 123, 195)),  # Rhodium (Rh)
+    (46, (165, 128, 190)),  # Palladium (Pd)
+    (47, (170, 138, 188)),  # Silver (Ag)
+    (48, (155, 131, 186)),  # Cadmium (Cd)
+    (49, (155, 136, 185)),  # Indium (In)
+    (50, (145, 141, 185)),  # Tin (Sn)
+    (51, (138, 138, 185)),  # Antimony (Sb)
+    (52, (135, 135, 190)),  # Tellurium (Te)
+    (53, (133, 133, 185)),  # Iodine (I)
+    (54, (130, 130, 202)),  # Xenon (Xe)
+    (55, (303, 240, 344)),  # Cesium (Cs)
+    (56, (268, 198, 253)),  # Barium (Ba)
+    (57, (240, 169, 240)),  # Lanthanum (La)
+    (58, (235, 165, 235)),  # Cerium (Ce)
+    (59, (230, 163, 230)),  # Praseodymium (Pr)
+    (60, (228, 181, 228)),  # Neodymium (Nd)
+    (61, (226, 177, 226)),  # Promethium (Pm)
+    (62, (224, 176, 224)),  # Samarium (Sm)
+    (63, (222, 175, 222)),  # Europium (Eu)
+    (64, (222, 173, 222)),  # Gadolinium (Gd)
+    (65, (221, 172, 221)),  # Terbium (Tb)
+    (66, (220, 171, 220)),  # Dysprosium (Dy)
+    (67, (219, 170, 219)),  # Holmium (Ho)
+    (68, (218, 169, 218)),  # Erbium (Er)
+    (69, (217, 168, 217)),  # Thulium (Tm)
+    (70, (216, 177, 216)),  # Ytterbium (Yb)
+    (71, (215, 156, 215)),  # Lutetium (Lu)
+    (72, (206, 145, 208)),  # Hafnium (Hf)
+    (73, (200, 138, 200)),  # Tantalum (Ta)
+    (74, (192, 146, 193)),  # Tungsten (W)
+    (75, (190, 132, 190)),  # Rhenium (Re)
+    (76, (185, 130, 185)),  # Osmium (Os)
+    (77, (180, 128, 180)),  # Iridium (Ir)
+    (78, (177, 137, 177)),  # Platinum (Pt)
+    (79, (174, 144, 174)),  # Gold (Au)
+    (80, (171, 149, 171)),  # Mercury (Hg)
+    (81, (170, 148, 170)),  # Thallium (Tl)
+    (82, (166, 147, 166)),  # Lead (Pb)
+    (83, (165, 146, 165)),  # Bismuth (Bi)
+    (84, (165, 148, 165)),  # Polonium (Po)
+    (85, (163, 149, 163)),  # Astatine (At)
+    (86, (154, 157, 180)),  # Radon (Rn)
+    (87, (210, 222, 244)),  # Francium (Fr)
+    (88, (180, 238, 283)),  # Radium (Ra)
+    (89, (169, 215, 278)),  # Actinium (Ac)
+    (90, (160, 200, 238)),  # Thorium (Th)
+    (91, (159, 188, 237)),  # Protactinium (Pa)
+    (92, (157, 175, 232)),  # Uranium (U)
+    (93, (156, 168, 238)),  # Neptunium (Np)
+    (94, (155, 159, 244)),  # Plutonium (Pu)
+    (95, (158, 169, 260)),  # Americium (Am)
+    (96, (186, 177, 221)),  # Curium (Cm)
+    (97, (186, 173, 216)),  # Berkelium (Bk)
+    (98, (186, 172, 213)),  # Californium (Cf)
+    (99, (186, 176, 210)),  # Einsteinium (Es)
+    (100, ("N/A", "N/A", "N/A")),  # Fermium (Fm)
+    (101, ("N/A", "N/A", "N/A")),  # Mendelevium (Md)
+    (102, ("N/A", "N/A", "N/A")),  # Nobelium (No)
+    (103, ("N/A", "N/A", "N/A")),  # Lawrencium (Lr)
+    (104, ("N/A", "N/A", "N/A")),  # Rutherfordium (Rf)
+    (105, ("N/A", "N/A", "N/A")),  # Dubnium (Db)
+    (106, ("N/A", "N/A", "N/A")),  # Seaborgium (Sg)
+    (107, ("N/A", "N/A", "N/A")),  # Bohrium (Bh)
+    (108, ("N/A", "N/A", "N/A")),  # Hassium (Hs)
+    (109, ("N/A", "N/A", "N/A")),  # Meitnerium (Mt)
+    (110, ("N/A", "N/A", "N/A")),  # Darmstadtium (Ds)
+    (111, ("N/A", "N/A", "N/A")),  # Roentgenium (Rg)
+    (112, ("N/A", "N/A", "N/A")),  # Copernicium (Cn)
+    (113, ("N/A", "N/A", "N/A")),  # Nihonium (Nh)
+    (114, ("N/A", "N/A", "N/A")),  # Flerovium (Fl)
+    (115, ("N/A", "N/A", "N/A")),  # Moscovium (Mc)
+    (116, ("N/A", "N/A", "N/A")),  # Livermorium (Lv)
+    (117, ("N/A", "N/A", "N/A")),  # Tennessine (Ts)
+    (118, ("N/A", "N/A", "N/A")),  # Oganesson (Og)
+]
+
+
+
+
+standard_hydrogen_electrode_potential = [
+    (1, 4.44),   # Hydrogen (H)
+    (2, "N/A"),  # Helium (He)
+    (3, -3.04),  # Lithium (Li)
+    (4, -1.85),  # Beryllium (Be)
+    (5, "N/A"),  # Boron (B)
+    (6, "N/A"),  # Carbon (C)
+    (7, "N/A"),  # Nitrogen (N)
+    (8, "N/A"),  # Oxygen (O)
+    (9, "N/A"),  # Fluorine (F)
+    (10, "N/A"),  # Neon (Ne)
+    (11, -2.71),  # Sodium (Na)
+    (12, -2.37),  # Magnesium (Mg)
+    (13, -3.05),  # Aluminum (Al)
+    (14, "N/A"),  # Silicon (Si)
+    (15, "N/A"),  # Phosphorus (P)
+    (16, "N/A"),  # Sulfur (S)
+    (17, "N/A"),  # Chlorine (Cl)
+    (18, -2.59),  # Argon (Ar)
+    (19, -2.93),  # Potassium (K)
+    (20, -2.37),  # Calcium (Ca)
+    (21, -2.24),  # Scandium (Sc)
+    (22, -1.63),  # Titanium (Ti)
+    (23, -1.18),  # Vanadium (V)
+    (24, -0.74),  # Chromium (Cr)
+    (25, -0.28),  # Manganese (Mn)
+    (26, -0.44),  # Iron (Fe)
+    (27, -0.23),  # Cobalt (Co)
+    (28, -0.23),  # Nickel (Ni)
+    (29, -0.34),  # Copper (Cu)
+    (30, -0.40),  # Zinc (Zn)
+    (31, "N/A"),  # Gallium (Ga)
+    (32, "N/A"),  # Germanium (Ge)
+    (33, "N/A"),  # Arsenic (As)
+    (34, "N/A"),  # Selenium (Se)
+    (35, "N/A"),  # Bromine (Br)
+    (36, -2.92),  # Krypton (Kr)
+    (37, "N/A"),  # Rubidium (Rb)
+    (38, -2.90),  # Strontium (Sr)
+    (39, -2.37),  # Yttrium (Y)
+    (40, -1.66),  # Zirconium (Zr)
+    (41, -1.66),  # Niobium (Nb)
+    (42, -1.74),  # Molybdenum (Mo)
+    (43, -1.65),  # Technetium (Tc)
+    (44, -1.58),  # Ruthenium (Ru)
+    (45, -1.57),  # Rhodium (Rh)
+    (46, -1.63),  # Palladium (Pd)
+    (47, -1.68),  # Silver (Ag)
+    (48, -1.67),  # Cadmium (Cd)
+    (49, -1.70),  # Indium (In)
+    (50, "N/A"),  # Tin (Sn)
+    (51, "N/A"),  # Antimony (Sb)
+    (52, "N/A"),  # Tellurium (Te)
+    (53, "N/A"),  # Iodine (I)
+    (54, "N/A"),  # Xenon (Xe)
+    (55, -2.92),  # Cesium (Cs)
+    (56, -2.90),  # Barium (Ba)
+    (57, -2.37),  # Lanthanum (La)
+    (58, -2.37),  # Cerium (Ce)
+    (59, -2.37),  # Praseodymium (Pr)
+    (60, -2.37),  # Neodymium (Nd)
+    (61, -2.37),  # Promethium (Pm)
+    (62, -2.37),  # Samarium (Sm)
+    (63, -2.37),  # Europium (Eu)
+    (64, -2.37),  # Gadolinium (Gd)
+    (65, -2.37),  # Terbium (Tb)
+    (66, -2.37),  # Dysprosium (Dy)
+    (67, -2.37),  # Holmium (Ho)
+    (68, -2.37),  # Erbium (Er)
+    (69, -2.37),  # Thulium (Tm)
+    (70, -2.37),  # Ytterbium (Yb)
+    (71, -2.37),  # Lutetium (Lu)
+    (72, -2.37),  # Hafnium (Hf)
+    (73, -2.37),  # Tantalum (Ta)
+    (74, -2.37),  # Tungsten (W)
+    (75, -2.37),  # Rhenium (Re)
+    (76, -2.37),  # Osmium (Os)
+    (77, -2.37),  # Iridium (Ir)
+    (78, -2.37),  # Platinum (Pt)
+    (79, -2.37),  # Gold (Au)
+    (80, -2.37),  # Mercury (Hg)
+    (81, -2.37),  # Thallium (Tl)
+    (82, -2.37),  # Lead (Pb)
+    (83, -2.37),  # Bismuth (Bi)
+    (84, -2.37),  # Polonium (Po)
+    (85, -2.37),  # Astatine (At)
+    (86, -2.37),  # Radon (Rn)
+    (87, "N/A"),  # Francium (Fr)
+    (88, "N/A"),  # Radium (Ra)
+    (89, "N/A"),  # Actinium (Ac)
+    (90, "N/A"),  # Thorium (Th)
+    (91, "N/A"),  # Protactinium (Pa)
+    (92, "N/A"),  # Uranium (U)
+    (93, "N/A"),  # Neptunium (Np)
+    (94, "N/A"),  # Plutonium (Pu)
+    (95, "N/A"),  # Americium (Am)
+    (96, "N/A"),  # Curium (Cm)
+    (97, "N/A"),  # Berkelium (Bk)
+    (98, "N/A"),  # Californium (Cf)
+    (99, "N/A"),  # Einsteinium (Es)
+    (100, "N/A"),  # Fermium (Fm)
+    (101, "N/A"),  # Mendelevium (Md)
+    (102, "N/A"),  # Nobelium (No)
+    (103, "N/A"),  # Lawrencium (Lr)
+    (104, "N/A"),  # Rutherfordium (Rf)
+    (105, "N/A"),  # Dubnium (Db)
+    (106, "N/A"),  # Seaborgium (Sg)
+    (107, "N/A"),  # Bohrium (Bh)
+    (108, "N/A"),  # Hassium (Hs)
+    (109, "N/A"),  # Meitnerium (Mt)
+    (110, "N/A"),  # Darmstadtium (Ds)
+    (111, "N/A"),  # Roentgenium (Rg)
+    (112, "N/A"),  # Copernicium (Cn)
+    (113, "N/A"),  # Nihonium (Nh)
+    (114, "N/A"),  # Flerovium (Fl)
+    (115, "N/A"),  # Moscovium (Mc)
+    (116, "N/A"),  # Livermorium (Lv)
+    (117, "N/A"),  # Tennessine (Ts)
+    (118, "N/A"),  # Oganesson (Og)
+]
+
+
+
+
+
+standard_hydrogen_electrode_potential = [
+    (1, 0.00),    # Hydrogen (H)
+    (2, "N/A"),   # Helium (He)
+    (3, -3.04),   # Lithium (Li)
+    (4, -1.85),   # Beryllium (Be)
+    (5, "N/A"),   # Boron (B)
+    (6, "N/A"),   # Carbon (C)
+    (7, "N/A"),   # Nitrogen (N)
+    (8, "N/A"),   # Oxygen (O)
+    (9, "N/A"),   # Fluorine (F)
+    (10, "N/A"),  # Neon (Ne)
+    (11, -2.71),  # Sodium (Na)
+    (12, -2.37),  # Magnesium (Mg)
+    (13, -3.05),  # Aluminum (Al)
+    (14, "N/A"),  # Silicon (Si)
+    (15, "N/A"),  # Phosphorus (P)
+    (16, "N/A"),  # Sulfur (S)
+    (17, "N/A"),  # Chlorine (Cl)
+    (18, -2.59),  # Argon (Ar)
+    (19, -2.93),  # Potassium (K)
+    (20, -2.37),  # Calcium (Ca)
+    (21, -2.24),  # Scandium (Sc)
+    (22, -1.63),  # Titanium (Ti)
+    (23, -1.18),  # Vanadium (V)
+    (24, -0.74),  # Chromium (Cr)
+    (25, -0.28),  # Manganese (Mn)
+    (26, -0.44),  # Iron (Fe)
+    (27, -0.23),  # Cobalt (Co)
+    (28, -0.23),  # Nickel (Ni)
+    (29, -0.34),  # Copper (Cu)
+    (30, -0.40),  # Zinc (Zn)
+    (31, "N/A"),  # Gallium (Ga)
+    (32, "N/A"),  # Germanium (Ge)
+    (33, "N/A"),  # Arsenic (As)
+    (34, "N/A"),  # Selenium (Se)
+    (35, "N/A"),  # Bromine (Br)
+    (36, -2.92),  # Krypton (Kr)
+    (37, "N/A"),  # Rubidium (Rb)
+    (38, -2.90),  # Strontium (Sr)
+    (39, -2.37),  # Yttrium (Y)
+    (40, -1.66),  # Zirconium (Zr)
+    (41, -1.66),  # Niobium (Nb)
+    (42, -1.74),  # Molybdenum (Mo)
+    (43, -1.65),  # Technetium (Tc)
+    (44, -1.58),  # Ruthenium (Ru)
+    (45, -1.57),  # Rhodium (Rh)
+    (46, -1.63),  # Palladium (Pd)
+    (47, -1.68),  # Silver (Ag)
+    (48, -1.67),  # Cadmium (Cd)
+    (49, -1.70),  # Indium (In)
+    (50, "N/A"),  # Tin (Sn)
+    (51, "N/A"),  # Antimony (Sb)
+    (52, "N/A"),  # Tellurium (Te)
+    (53, "N/A"),  # Iodine (I)
+    (54, "N/A"),  # Xenon (Xe)
+    (55, -2.92),  # Cesium (Cs)
+    (56, -2.90),  # Barium (Ba)
+    (57, -2.37),  # Lanthanum (La)
+    (58, -2.37),  # Cerium (Ce)
+    (59, -2.37),  # Praseodymium (Pr)
+    (60, -2.37),  # Neodymium (Nd)
+    (61, -2.37),  # Promethium (Pm)
+    (62, -2.37),  # Samarium (Sm)
+    (63, -2.37),  # Europium (Eu)
+    (64, -2.37),  # Gadolinium (Gd)
+    (65, -2.37),  # Terbium (Tb)
+    (66, -2.37),  # Dysprosium (Dy)
+    (67, -2.37),  # Holmium (Ho)
+    (68, -2.37),  # Erbium (Er)
+    (69, -2.37),  # Thulium (Tm)
+    (70, -2.37),  # Ytterbium (Yb)
+    (71, -2.37),  # Lutetium (Lu)
+    (72, -2.37),  # Hafnium (Hf)
+    (73, -2.37),  # Tantalum (Ta)
+    (74, -2.37),  # Tungsten (W)
+    (75, -2.37),  # Rhenium (Re)
+    (76, -2.37),  # Osmium (Os)
+    (77, -2.37),  # Iridium (Ir)
+    (78, -2.37),  # Platinum (Pt)
+    (79, -2.37),  # Gold (Au)
+    (80, -2.37),  # Mercury (Hg)
+    (81, -2.37),  # Thallium (Tl)
+    (82, -2.37),  # Lead (Pb)
+    (83, -2.37),  # Bismuth (Bi)
+    (84, -2.37),  # Polonium (Po)
+    (85, -2.37),  # Astatine (At)
+    (86, -2.37),  # Radon (Rn)
+    (87, "N/A"),  # Francium (Fr)
+    (88, "N/A"),  # Radium (Ra)
+    (89, "N/A"),  # Actinium (Ac)
+    (90, "N/A"),  # Thorium (Th)
+    (91, "N/A"),  # Protactinium (Pa)
+    (92, "N/A"),  # Uranium (U)
+    (93, "N/A"),  # Neptunium (Np)
+    (94, "N/A"),  # Plutonium (Pu)
+    (95, "N/A"),  # Americium (Am)
+    (96, "N/A"),  # Curium (Cm)
+    (97, "N/A"),  # Berkelium (Bk)
+    (98, "N/A"),  # Californium (Cf)
+    (99, "N/A"),  # Einsteinium (Es)
+    (100, "N/A"),  # Fermium (Fm)
+    (101, "N/A"),  # Mendelevium (Md)
+    (102, "N/A"),  # Nobelium (No)
+    (103, "N/A"),  # Lawrencium (Lr)
+    (104, "N/A"),  # Rutherfordium (Rf)
+    (105, "N/A"),  # Dubnium (Db)
+    (106, "N/A"),  # Seaborgium (Sg)
+    (107, "N/A"),  # Bohrium (Bh)
+    (108, "N/A"),  # Hassium (Hs)
+    (109, "N/A"),  # Meitnerium (Mt)
+    (110, "N/A"),  # Darmstadtium (Ds)
+    (111, "N/A"),  # Roentgenium (Rg)
+    (112, "N/A"),  # Copernicium (Cn)
+    (113, "N/A"),  # Nihonium (Nh)
+    (114, "N/A"),  # Flerovium (Fl)
+    (115, "N/A"),  # Moscovium (Mc)
+    (116, "N/A"),  # Livermorium (Lv)
+    (117, "N/A"),  # Tennessine (Ts)
+    (118, "N/A"),  # Oganesson (Og)
+]
+
+
+
+advantages = [
+    (1, "Hydrogen: Abundant, versatile, lightweight."),
+    (2, "Helium: Inert, non-toxic, used in various gas applications."),
+    (3, "Lithium: Lightweight, high specific heat capacity, used in batteries and alloys."),
+    (4, "Beryllium: Lightweight, strong, high melting point, used in aerospace and nuclear applications."),
+    (5, "Boron: Hard, high melting point, used in ceramics, electronics, and neutron capture."),
+    (6, "Carbon: Versatile, forms a wide variety of compounds, used in organic chemistry, materials science, and as a fuel."),
+    (7, "Nitrogen: Abundant, inert gas, used in fertilizers, explosives, and cryogenics."),
+    (8, "Oxygen: Essential for respiration, widely used in combustion, welding, and medical applications."),
+    (9, "Fluorine: Highly reactive, used in fluoridation, refrigerants, and manufacturing of Teflon."),
+    (10, "Neon: Inert gas, used in neon lighting, advertising signs, and cryogenics."),
+    (11, "Sodium: Abundant, reactive metal, used in alloys, chemicals, and as a coolant."),
+    (12, "Magnesium: Lightweight, strong, used in alloys, pyrotechnics, and healthcare products."),
+    (13, "Aluminum: Lightweight, corrosion-resistant, widely used in aerospace, construction, and packaging."),
+    (14, "Silicon: Abundant, semiconductor material, used in electronics, solar cells, and glass production."),
+    (15, "Phosphorus: Essential for life, used in fertilizers, detergents, and matches."),
+    (16, "Sulfur: Widely used in sulfuric acid production, vulcanization of rubber, and pharmaceuticals."),
+    (17, "Chlorine: Versatile disinfectant, used in water treatment, plastics, and pharmaceuticals."),
+    (18, "Argon: Inert gas, used in welding, lighting, and as a protective atmosphere."),
+    (19, "Potassium: Essential for life, used in fertilizers, soap production, and pharmaceuticals."),
+    (20, "Calcium: Essential for bones and teeth, used in construction, metallurgy, and agriculture."),
+    (21, "Scandium: Lightweight, used in aerospace alloys and high-intensity lamps."),
+    (22, "Titanium: Lightweight, strong, corrosion-resistant, used in aerospace, medical implants, and jewelry."),
+    (23, "Vanadium: Strong, corrosion-resistant, used in steel alloys, aerospace applications, and batteries."),
+    (24, "Chromium: Corrosion-resistant, used in stainless steel, plating, and alloys."),
+    (25, "Manganese: Strengthens steel, used in batteries, ceramics, and fertilizers."),
+    (26, "Iron: Abundant, strong, used in construction, manufacturing, and transportation."),
+    (27, "Cobalt: Magnetic, used in alloys, magnets, and rechargeable batteries."),
+    (28, "Nickel: Corrosion-resistant, used in alloys, plating, and batteries."),
+    (29, "Copper: Conductive, malleable, used in electrical wiring, plumbing, and electronics."),
+    (30, "Zinc: Corrosion-resistant, used in galvanizing, batteries, and alloys."),
+    (31, "Gallium: Low melting point, used in electronics, solar cells, and medical imaging."),
+    (32, "Germanium: Semiconductor material, used in electronics, fiber optics, and solar cells."),
+    (33, "Arsenic: Semiconductor material, used in pesticides, wood preservatives, and electronics."),
+    (34, "Selenium: Semiconductor material, used in photovoltaic cells, glassmaking, and electronics."),
+    (35, "Bromine: Versatile halogen, used in flame retardants, pharmaceuticals, and water treatment."),
+    (36, "Krypton: Inert gas, used in lighting, lasers, and window insulation."),
+    (37, "Rubidium: Highly reactive, used in atomic clocks, research, and specialized batteries."),
+    (38, "Strontium: Used in fireworks, pyrotechnics, and medical imaging."),
+    (39, "Yttrium: Used in alloys, phosphors, and superconductors."),
+    (40, "Zirconium: Corrosion-resistant, used in nuclear reactors, ceramics, and alloys."),
+    (41, "Niobium: High melting point, used in superalloys, superconductors, and aerospace applications."),
+    (42, "Molybdenum: High melting point, used in steel alloys, lubricants, and catalysts."),
+    (43, "Technetium: Radioactive, used in medical imaging and nuclear medicine."),
+    (44, "Ruthenium: Corrosion-resistant, used in electronics, catalysts, and jewelry."),
+    (45, "Rhodium: Rare and expensive, used in catalytic converters, jewelry, and electrical contacts."),
+    (46, "Palladium: Used in catalytic converters, electronics, and jewelry."),
+    (47, "Silver: Highly conductive, used in electronics, jewelry, and photography."),
+    (48, "Cadmium: Corrosion-resistant, used in batteries, pigments, and electroplating."),
+    (49, "Indium: Used in electronics, solar cells, and LCD screens."),
+    (50, "Tin: Versatile metal, used in alloys, coatings, and solder."),
+    (51, "Antimony: Used in flame retardants, batteries, and alloys."),
+    (52, "Tellurium: Used in alloys, semiconductors, and solar cells."),
+    (53, "Iodine: Used in medicine, photography, and disinfectants."),
+    (54, "Xenon: Used in lighting, lasers, and anesthesia."),
+    (55, "Cesium: Used in atomic clocks, drilling fluids, and catalysts."),
+    (56, "Barium: Used in fireworks, X-ray diagnostics, and drilling fluids."),
+    (57, "Lanthanum: Used in carbon lighting, catalysts, and optics."),
+    (58, "Cerium: Used in catalytic converters, glassmaking, and metallurgy."),
+    (59, "Praseodymium: Used in magnets, lasers, and carbon arc lighting."),
+    (60, "Neodymium: Used in magnets, lasers, and glass colorants."),
+    (61, "Promethium: Radioactive, used in nuclear batteries and research."),
+    (62, "Samarium: Used in magnets, catalysts, and nuclear reactors."),
+    (63, "Europium: Used in phosphors, lasers, and nuclear control rods."),
+    (64, "Gadolinium: Used in MRI contrast agents, neutron capture therapy, and electronics."),
+    (65, "Terbium: Used in fluorescent lamps, phosphors, and lasers."),
+    (66, "Dysprosium: Used in magnets, lasers, and nuclear reactors."),
+    (67, "Holmium: Used in magnets, lasers, and nuclear control rods."),
+    (68, "Erbium: Used in lasers, fiber optics, and metallurgy."),
+    (69, "Thulium: Used in portable X-ray devices, lasers, and nuclear medicine."),
+    (70, "Ytterbium: Used in lasers, nuclear reactors, and metallurgy."),
+    (71, "Lutetium: Used in catalysts, phosphors, and nuclear medicine."),
+    (72, "Hafnium: Used in nuclear reactors, aerospace alloys, and semiconductor manufacturing."),
+    (73, "Tantalum: Corrosion-resistant, used in capacitors, medical implants, and alloys."),
+    (74, "Tungsten: High melting point, used in filaments, alloys, and armor-piercing ammunition."),
+    (75, "Rhenium: High melting point, used in superalloys, catalysts, and electrical contacts."),
+    (76, "Osmium: Densest naturally occurring element, used in alloys, electrical contacts, and fountain pen tips."),
+    (77, "Iridium: Dense, corrosion-resistant, used in spark plugs, crucibles, and jewelry."),
+    (78, "Platinum: Corrosion-resistant, used in catalytic converters, jewelry, and electronics."),
+    (79, "Gold: Highly ductile and malleable, used in jewelry, electronics, and currency."),
+    (80, "Mercury: Liquid at room temperature, used in thermometers, fluorescent lights, and dental fillings."),
+    (81, "Thallium: Highly toxic, used in electronics, optical lenses, and medical imaging."),
+    (82, "Lead: Ductile, corrosion-resistant, used in batteries, solder, and radiation shielding."),
+    (83, "Bismuth: Non-toxic, used in cosmetics, medicine, and low-melting alloys."),
+    (84, "Polonium: Radioactive, used in antistatic devices, nuclear batteries, and research."),
+    (85, "Astatine: Radioactive, used in research and no practical applications."),
+    (86, "Radon: Radioactive, used in cancer treatment and research."),
+    (87, "Francium: Highly radioactive, no practical applications."),
+    (88, "Radium: Radioactive, historically used in self-luminous paint and cancer treatment."),
+    (89, "Actinium: Radioactive, used in research and no practical applications."),
+    (90, "Thorium: Radioactive, used in nuclear reactors, lantern mantles, and alloys."),
+    (91, "Protactinium: Radioactive, used in research and no practical applications."),
+    (92, "Uranium: Radioactive, used in nuclear reactors, weapons, and nuclear medicine."),
+    (93, "Neptunium: Radioactive, used in research and no practical applications."),
+    (94, "Plutonium: Radioactive, used in nuclear reactors, weapons, and power sources for spacecraft."),
+    (95, "Americium: Radioactive, used in smoke detectors and research."),
+    (96, "Curium: Radioactive, used in research and no practical applications."),
+    (97, "Berkelium: Radioactive, used in research and no practical applications."),
+    (98, "Californium: Radioactive, used in research and no practical applications."),
+    (99, "Einsteinium: Radioactive, used in research and no practical applications."),
+    (100, "Fermium: Radioactive, used in research and no practical applications."),
+    (101, "Mendelevium: Radioactive, used in research and no practical applications."),
+    (102, "Nobelium: Radioactive, used in research and no practical applications."),
+    (103, "Lawrencium: Radioactive, used in research and no practical applications."),
+    (104, "Rutherfordium: Radioactive, used in research and no practical applications."),
+    (105, "Dubnium: Radioactive, used in research and no practical applications."),
+    (106, "Seaborgium: Radioactive, used in research and no practical applications."),
+    (107, "Bohrium: Radioactive, used in research and no practical applications."),
+    (108, "Hassium: Radioactive, used in research and no practical applications."),
+    (109, "Meitnerium: Radioactive, used in research and no practical applications."),
+    (110, "Darmstadtium: Radioactive, used in research and no practical applications."),
+    (111, "Roentgenium: Radioactive, used in research and no practical applications."),
+    (112, "Copernicium: Radioactive, used in research and no practical applications."),
+    (113, "Nihonium: Radioactive, used in research and no practical applications."),
+    (114, "Flerovium: Radioactive, used in research and no practical applications."),
+    (115, "Moscovium: Radioactive, used in research and no practical applications."),
+    (116, "Livermorium: Radioactive, used in research and no practical applications."),
+    (117, "Tennessine: Radioactive, used in research and no practical applications."),
+    (118, "Oganesson: Radioactive, used in research and no practical applications.")
+]
+
+
+
+disadvantages = [
+    (1, "Hydrogen: Highly flammable, requires careful handling and storage."),
+    (2, "Helium: Limited availability on Earth, can escape into space."),
+    (3, "Lithium: Limited availability, expensive extraction process, can be reactive."),
+    (4, "Beryllium: Toxic in certain forms, poses health risks if mishandled."),
+    (5, "Boron: Limited natural abundance, can be hazardous in certain forms."),
+    (6, "Carbon: Can form toxic compounds, pollution concerns with carbon emissions."),
+    (7, "Nitrogen: Can cause asphyxiation in high concentrations, contributes to air pollution."),
+    (8, "Oxygen: Supports combustion, can be hazardous in high concentrations."),
+    (9, "Fluorine: Highly reactive, toxic, can cause burns and respiratory issues."),
+    (10, "Neon: Limited industrial applications due to inertness."),
+    (11, "Sodium: Highly reactive with water, poses fire and explosion hazards."),
+    (12, "Magnesium: Combustible, poses fire hazards if mishandled."),
+    (13, "Aluminum: Reacts with certain chemicals, can be hazardous in powder form."),
+    (14, "Silicon: Can cause respiratory issues if inhaled in dust form."),
+    (15, "Phosphorus: Highly reactive, poses fire hazards, can be toxic in certain forms."),
+    (16, "Sulfur: Unpleasant odor, air pollutant, can be hazardous in high concentrations."),
+    (17, "Chlorine: Toxic, can cause respiratory issues, reacts violently with certain chemicals."),
+    (18, "Argon: Inert, limited reactivity limits its applications."),
+    (19, "Potassium: Highly reactive with water, poses fire and explosion hazards."),
+    (20, "Calcium: Reacts with water, can cause burns and irritation."),
+    (21, "Scandium: Limited availability, high cost, limited applications."),
+    (22, "Titanium: Expensive extraction process, limited availability in pure form."),
+    (23, "Vanadium: Limited availability, can be toxic in certain forms."),
+    (24, "Chromium: Toxic in certain forms, can cause allergic reactions."),
+    (25, "Manganese: Can be toxic in high concentrations, poses environmental concerns."),
+    (26, "Iron: Corrosion, rusting, can be toxic in excess."),
+    (27, "Cobalt: Toxic in certain forms, can cause allergic reactions."),
+    (28, "Nickel: Can cause allergic reactions in some individuals, toxic in certain forms."),
+    (29, "Copper: Can be toxic in high concentrations, reacts with certain foods."),
+    (30, "Zinc: Can cause gastrointestinal issues if ingested in large quantities."),
+    (31, "Gallium: Low melting point, can melt in hand, toxic in certain forms."),
+    (32, "Germanium: Limited availability, toxic in certain forms."),
+    (33, "Arsenic: Highly toxic, carcinogenic, poses environmental and health risks."),
+    (34, "Selenium: Toxic in high concentrations, poses environmental concerns."),
+    (35, "Bromine: Toxic, can cause burns and respiratory issues."),
+    (36, "Krypton: Limited applications due to inertness, expensive to produce."),
+    (37, "Rubidium: Highly reactive with water, poses fire and explosion hazards."),
+    (38, "Strontium: Radioactive isotopes can pose health risks, toxic in certain forms."),
+    (39, "Yttrium: Limited availability, can be toxic in certain forms."),
+    (40, "Zirconium: Can cause irritation and respiratory issues if inhaled."),
+    (41, "Niobium: Limited availability, can be toxic in certain forms."),
+    (42, "Molybdenum: Limited availability, can be toxic in certain forms."),
+    (43, "Technetium: Radioactive, poses health and environmental risks."),
+    (44, "Ruthenium: Limited availability, toxic in certain forms."),
+    (45, "Rhodium: Rare and expensive, limited availability in pure form."),
+    (46, "Palladium: Rare and expensive, limited availability in pure form."),
+    (47, "Silver: Limited availability, can tarnish and react with certain substances."),
+    (48, "Cadmium: Highly toxic, poses environmental and health risks."),
+    (49, "Indium: Limited availability, toxic in certain forms."),
+    (50, "Tin: Limited availability, can be toxic in certain forms."),
+    (51, "Antimony: Highly toxic, poses health and environmental risks."),
+    (52, "Tellurium: Limited availability, can be toxic in certain forms."),
+    (53, "Iodine: Highly reactive, can cause burns and respiratory issues."),
+    (54, "Xenon: Limited applications due to inertness, expensive to produce."),
+    (55, "Cesium: Highly reactive, explosive in contact with water, poses fire hazards."),
+    (56, "Barium: Toxic, can cause gastrointestinal issues if ingested."),
+    (57, "Lanthanum: Limited availability, can be toxic in certain forms."),
+    (58, "Cerium: Limited availability, can be toxic in certain forms."),
+    (59, "Praseodymium: Limited availability, can be toxic in certain forms."),
+    (60, "Neodymium: Limited availability, can be toxic in certain forms."),
+    (61, "Promethium: Radioactive, poses health and environmental risks."),
+    (62, "Samarium: Limited availability, can be toxic in certain forms."),
+    (63, "Europium: Limited availability, can be toxic in certain forms."),
+    (64, "Gadolinium: Limited availability, can be toxic in certain forms."),
+    (65, "Terbium: Limited availability, can be toxic in certain forms."),
+    (66, "Dysprosium: Limited availability, can be toxic in certain forms."),
+    (67, "Holmium: Limited availability, can be toxic in certain forms."),
+    (68, "Erbium: Limited availability, can be toxic in certain forms."),
+    (69, "Thulium: Limited availability, can be toxic in certain forms."),
+    (70, "Ytterbium: Limited availability, can be toxic in certain forms."),
+    (71, "Lutetium: Limited availability, can be toxic in certain forms."),
+    (72, "Hafnium: Limited availability, can be toxic in certain forms."),
+    (73, "Tantalum: Limited availability, can be toxic in certain forms."),
+    (74, "Tungsten: Limited availability, can be toxic in certain forms."),
+    (75, "Rhenium: Limited availability, can be toxic in certain forms."),
+    (76, "Osmium: Limited availability, can be toxic in certain forms."),
+    (77, "Iridium: Limited availability, can be toxic in certain forms."),
+    (78, "Platinum: Limited availability, can be toxic in certain forms."),
+    (79, "Gold: Limited availability, can be toxic in certain forms."),
+    (80, "Mercury: Highly toxic, poses environmental and health risks."),
+    (81, "Thallium: Highly toxic, poses health and environmental risks."),
+    (82, "Lead: Highly toxic, poses health and environmental risks."),
+    (83, "Bismuth: Limited availability, can be toxic in certain forms."),
+    (84, "Polonium: Highly radioactive, poses health and environmental risks."),
+    (85, "Astatine: Highly radioactive, poses health and environmental risks."),
+    (86, "Radon: Highly radioactive, poses health and environmental risks."),
+    (87, "Francium: Highly radioactive, poses health and environmental risks."),
+    (88, "Radium: Highly radioactive, poses health and environmental risks."),
+    (89, "Actinium: Highly radioactive, poses health and environmental risks."),
+    (90, "Thorium: Radioactive, poses health and environmental risks."),
+    (91, "Protactinium: Radioactive, poses health and environmental risks."),
+    (92, "Uranium: Radioactive, poses health and environmental risks."),
+    (93, "Neptunium: Radioactive, poses health and environmental risks."),
+    (94, "Plutonium: Radioactive, poses health and environmental risks."),
+    (95, "Americium: Radioactive, poses health and environmental risks."),
+    (96, "Curium: Radioactive, poses health and environmental risks."),
+    (97, "Berkelium: Radioactive, poses health and environmental risks."),
+    (98, "Californium: Radioactive, poses health and environmental risks."),
+    (99, "Einsteinium: Radioactive, poses health and environmental risks."),
+    (100, "Fermium: Radioactive, poses health and environmental risks."),
+    (101, "Mendelevium: Radioactive, poses health and environmental risks."),
+    (102, "Nobelium: Radioactive, poses health and environmental risks."),
+    (103, "Lawrencium: Radioactive, poses health and environmental risks."),
+    (104, "Rutherfordium: Radioactive, poses health and environmental risks."),
+    (105, "Dubnium: Radioactive, poses health and environmental risks."),
+    (106, "Seaborgium: Radioactive, poses health and environmental risks."),
+    (107, "Bohrium: Radioactive, poses health and environmental risks."),
+    (108, "Hassium: Radioactive, poses health and environmental risks."),
+    (109, "Meitnerium: Radioactive, poses health and environmental risks."),
+    (110, "Darmstadtium: Radioactive, poses health and environmental risks."),
+    (111, "Roentgenium: Radioactive, poses health and environmental risks."),
+    (112, "Copernicium: Radioactive, poses health and environmental risks."),
+    (113, "Nihonium: Radioactive, poses health and environmental risks."),
+    (114, "Flerovium: Radioactive, poses health and environmental risks."),
+    (115, "Moscovium: Radioactive, poses health and environmental risks."),
+    (116, "Livermorium: Radioactive, poses health and environmental risks."),
+    (117, "Tennessine: Radioactive, poses health and environmental risks."),
+    (118, "Oganesson: Radioactive, poses health and environmental risks.")
+]
+
+
+
+applications = [
+    (1, "Hydrogen: Fuel cells, ammonia production, oil refining."),
+    (2, "Helium: Cryogenics, helium-neon lasers, lifting gas."),
+    (3, "Lithium: Batteries, pharmaceuticals, ceramics."),
+    (4, "Beryllium: Aerospace components, X-ray windows, nuclear reactors."),
+    (5, "Boron: Ceramics, semiconductors, neutron capture."),
+    (6, "Carbon: Steel production, carbon fiber, electronics."),
+    (7, "Nitrogen: Fertilizers, explosives, food packaging."),
+    (8, "Oxygen: Medical oxygen, steelmaking, water treatment."),
+    (9, "Fluorine: Fluoridation, refrigerants, Teflon production."),
+    (10, "Neon: Neon lighting, advertising signs, cryogenics."),
+    (11, "Sodium: Pharmaceuticals, soap production, nuclear reactors."),
+    (12, "Magnesium: Aluminum alloys, pyrotechnics, healthcare products."),
+    (13, "Aluminum: Aerospace components, beverage cans, construction materials."),
+    (14, "Silicon: Semiconductors, solar cells, glass production."),
+    (15, "Phosphorus: Fertilizers, detergents, flame retardants."),
+    (16, "Sulfur: Sulfuric acid production, vulcanization, pharmaceuticals."),
+    (17, "Chlorine: Water treatment, PVC production, bleach."),
+    (18, "Argon: Welding, lighting, inert atmospheres."),
+    (19, "Potassium: Fertilizers, soap production, pharmaceuticals."),
+    (20, "Calcium: Construction materials, metallurgy, pharmaceuticals."),
+    (21, "Scandium: Aerospace components, lighting, sports equipment."),
+    (22, "Titanium: Aerospace components, medical implants, jewelry."),
+    (23, "Vanadium: Steel production, aerospace alloys, batteries."),
+    (24, "Chromium: Stainless steel, plating, alloys."),
+    (25, "Manganese: Steel production, batteries, ceramics."),
+    (26, "Iron: Construction materials, manufacturing, transportation."),
+    (27, "Cobalt: Alloys, magnets, rechargeable batteries."),
+    (28, "Nickel: Stainless steel, plating, batteries."),
+    (29, "Copper: Electrical wiring, plumbing, electronics."),
+    (30, "Zinc: Galvanizing, batteries, alloys."),
+    (31, "Gallium: Semiconductors, LEDs, solar cells."),
+    (32, "Germanium: Semiconductors, fiber optics, solar cells."),
+    (33, "Arsenic: Pesticides, wood preservatives, semiconductors."),
+    (34, "Selenium: Photovoltaic cells, glassmaking, electronics."),
+    (35, "Bromine: Flame retardants, pharmaceuticals, water treatment."),
+    (36, "Krypton: Lighting, lasers, window insulation."),
+    (37, "Rubidium: Atomic clocks, research, specialized batteries."),
+    (38, "Strontium: Pyrotechnics, medical imaging, toothpaste."),
+    (39, "Yttrium: Phosphors, alloys, superconductors."),
+    (40, "Zirconium: Nuclear reactors, ceramics, alloys."),
+    (41, "Niobium: Superalloys, superconductors, aerospace."),
+    (42, "Molybdenum: Steel production, lubricants, catalysts."),
+    (43, "Technetium: Medical imaging, nuclear medicine."),
+    (44, "Ruthenium: Electronics, catalysts, jewelry."),
+    (45, "Rhodium: Catalytic converters, jewelry, electrical contacts."),
+    (46, "Palladium: Catalytic converters, electronics, jewelry."),
+    (47, "Silver: Electronics, jewelry, photography."),
+    (48, "Cadmium: Batteries, pigments, electroplating."),
+    (49, "Indium: Electronics, solar cells, LCD screens."),
+    (50, "Tin: Alloys, coatings, solder."),
+    (51, "Antimony: Flame retardants, batteries, alloys."),
+    (52, "Tellurium: Semiconductors, solar cells, alloys."),
+    (53, "Iodine: Pharmaceuticals, dyes, iodized salt."),
+    (54, "Xenon: Lighting, anesthesia, ion propulsion."),
+    (55, "Cesium: Atomic clocks, drilling fluids, catalysts."),
+    (56, "Barium: X-ray diagnostics, fireworks, drilling fluids."),
+    (57, "Lanthanum: Carbon lighting, catalysts, optics."),
+    (58, "Cerium: Catalytic converters, glassmaking, metallurgy."),
+    (59, "Praseodymium: Magnets, lasers, carbon arc lighting."),
+    (60, "Neodymium: Magnets, lasers, glass colorants."),
+    (61, "Promethium: Radioisotope batteries, research."),
+    (62, "Samarium: Magnets, catalysts, nuclear reactors."),
+    (63, "Europium: Phosphors, lasers, nuclear control rods."),
+    (64, "Gadolinium: MRI contrast agents, neutron capture therapy, electronics."),
+    (65, "Terbium: Fluorescent lamps, phosphors, lasers."),
+    (66, "Dysprosium: Magnets, lasers, nuclear reactors."),
+    (67, "Holmium: Magnets, lasers, nuclear control rods."),
+    (68, "Erbium: Lasers, fiber optics, metallurgy."),
+    (69, "Thulium: Portable X-ray devices, lasers, nuclear medicine."),
+    (70, "Ytterbium: Lasers, nuclear reactors, metallurgy."),
+    (71, "Lutetium: Catalysts, phosphors, nuclear medicine."),
+    (72, "Hafnium: Nuclear reactors, aerospace alloys, semiconductor manufacturing."),
+    (73, "Tantalum: Capacitors, medical implants, alloys."),
+    (74, "Tungsten: Filaments, alloys, armor-piercing ammunition."),
+    (75, "Rhenium: Superalloys, catalysts, electrical contacts."),
+    (76, "Osmium: Alloys, electrical contacts, fountain pen tips."),
+    (77, "Iridium: Spark plugs, crucibles, jewelry."),
+    (78, "Platinum: Catalytic converters, jewelry, electronics."),
+    (79, "Gold: Jewelry, electronics, currency."),
+    (80, "Mercury: Thermometers, fluorescent lights, dental amalgams."),
+    (81, "Thallium: Electronics, optical lenses, medical imaging."),
+    (82, "Lead: Batteries, solder, radiation shielding."),
+    (83, "Bismuth: Pharmaceuticals, cosmetics, low-melting alloys."),
+    (84, "Polonium: Antistatic devices, nuclear batteries, research."),
+    (85, "Astatine: Research, no practical applications."),
+    (86, "Radon: Cancer treatment, research."),
+    (87, "Francium: Research, no practical applications."),
+    (88, "Radium: Historical self-luminous paint, cancer treatment."),
+    (89, "Actinium: Research, no practical applications."),
+    (90, "Thorium: Nuclear reactors, lantern mantles, alloys."),
+    (91, "Protactinium: Research, no practical applications."),
+    (92, "Uranium: Nuclear reactors, weapons, nuclear medicine."),
+    (93, "Neptunium: Research, no practical applications."),
+    (94, "Plutonium: Nuclear reactors, weapons, spacecraft power."),
+    (95, "Americium: Smoke detectors, research."),
+    (96, "Curium: Research, no practical applications."),
+    (97, "Berkelium: Research, no practical applications."),
+    (98, "Californium: Research, no practical applications."),
+    (99, "Einsteinium: Research, no practical applications."),
+    (100, "Fermium: Research, no practical applications."),
+    (101, "Mendelevium: Research, no practical applications."),
+    (102, "Nobelium: Research, no practical applications."),
+    (103, "Lawrencium: Research, no practical applications."),
+    (104, "Rutherfordium: Research, no practical applications."),
+    (105, "Dubnium: Research, no practical applications."),
+    (106, "Seaborgium: Research, no practical applications."),
+    (107, "Bohrium: Research, no practical applications."),
+    (108, "Hassium: Research, no practical applications."),
+    (109, "Meitnerium: Research, no practical applications."),
+    (110, "Darmstadtium: Research, no practical applications."),
+    (111, "Roentgenium: Research, no practical applications."),
+    (112, "Copernicium: Research, no practical applications."),
+    (113, "Nihonium: Research, no practical applications."),
+    (114, "Flerovium: Research, no practical applications."),
+    (115, "Moscovium: Research, no practical applications."),
+    (116, "Livermorium: Research, no practical applications."),
+    (117, "Tennessine: Research, no practical applications."),
+    (118, "Oganesson: Research, no practical applications.")
+]
+
+
+
+effects_on_humans_and_animals = [
+    (1, "Hydrogen: Generally non-toxic, but can be flammable in high concentrations."),
+    (2, "Helium: Non-toxic, but can cause asphyxiation in high concentrations."),
+    (3, "Lithium: Therapeutic doses used for bipolar disorder, but can be toxic in excess."),
+    (4, "Beryllium: Can cause chronic beryllium disease (CBD) in susceptible individuals."),
+    (5, "Boron: Generally low toxicity, but can cause irritation in high concentrations."),
+    (6, "Carbon: Essential component of organic molecules, but certain forms can be toxic (e.g., carbon monoxide)."),
+    (7, "Nitrogen: Generally non-toxic, but can cause asphyxiation in high concentrations."),
+    (8, "Oxygen: Essential for respiration, but high concentrations can be toxic."),
+    (9, "Fluorine: Can cause fluorosis in high concentrations, toxic to animals in excess."),
+    (10, "Neon: Generally non-toxic, but can cause asphyxiation in high concentrations."),
+    (11, "Sodium: Essential for nerve function, but excessive intake can lead to hypertension and edema."),
+    (12, "Magnesium: Essential for muscle and nerve function, but excessive intake can cause diarrhea."),
+    (13, "Aluminum: Generally low toxicity, but excessive intake may be associated with neurotoxicity."),
+    (14, "Silicon: Generally non-toxic, but excessive intake may interfere with mineral absorption."),
+    (15, "Phosphorus: Essential for bone health, but excessive intake can lead to mineral imbalances."),
+    (16, "Sulfur: Essential for protein synthesis, but excessive intake can cause digestive issues."),
+    (17, "Chlorine: Essential for digestion and immune function, but toxic in high concentrations."),
+    (18, "Argon: Generally non-toxic, but can cause asphyxiation in high concentrations."),
+    (19, "Potassium: Essential for nerve and muscle function, but excessive intake can lead to hyperkalemia."),
+    (20, "Calcium: Essential for bone and teeth health, but excessive intake can lead to kidney stones."),
+    (21, "Scandium: Limited toxicity data available, but likely low toxicity."),
+    (22, "Titanium: Generally considered biocompatible and non-toxic."),
+    (23, "Vanadium: Limited toxicity data available, but excessive intake may cause gastrointestinal upset."),
+    (24, "Chromium: Essential trace element, but excessive intake can lead to toxicity."),
+    (25, "Manganese: Essential trace element, but excessive intake can lead to neurological issues."),
+    (26, "Iron: Essential for oxygen transport, but excessive intake can lead to iron toxicity."),
+    (27, "Cobalt: Essential component of vitamin B12, but excessive intake can lead to toxicity."),
+    (28, "Nickel: Limited toxicity data available, but excessive exposure may cause allergic reactions."),
+    (29, "Copper: Essential for iron metabolism, but excessive intake can lead to toxicity."),
+    (30, "Zinc: Essential for immune function, but excessive intake can lead to toxicity."),
+    (31, "Gallium: Limited toxicity data available, but likely low toxicity."),
+    (32, "Germanium: Limited toxicity data available, but excessive intake may cause kidney damage."),
+    (33, "Arsenic: Highly toxic, can cause gastrointestinal issues and organ damage."),
+    (34, "Selenium: Essential trace element, but excessive intake can lead to toxicity."),
+    (35, "Bromine: Toxic in high concentrations, can cause skin and respiratory irritation."),
+    (36, "Krypton: Limited toxicity data available, but generally non-toxic."),
+    (37, "Rubidium: Limited toxicity data available, but excessive intake may affect heart function."),
+    (38, "Strontium: Limited toxicity data available, but excessive intake may affect bone health."),
+    (39, "Yttrium: Limited toxicity data available, but likely low toxicity."),
+    (40, "Zirconium: Limited toxicity data available, but likely low toxicity."),
+    (41, "Niobium: Limited toxicity data available, but likely low toxicity."),
+    (42, "Molybdenum: Essential trace element, but excessive intake can lead to toxicity."),
+    (43, "Technetium: Limited toxicity data available, but likely radioactive properties pose risks."),
+    (44, "Ruthenium: Limited toxicity data available, but likely low toxicity."),
+    (45, "Rhodium: Limited toxicity data available, but likely low toxicity."),
+    (46, "Palladium: Limited toxicity data available, but likely low toxicity."),
+    (47, "Silver: Limited toxicity data available, but excessive intake can lead to argyria."),
+    (48, "Cadmium: Highly toxic, can cause kidney damage and cancer."),
+    (49, "Indium: Limited toxicity data available, but likely low toxicity."),
+    (50, "Tin: Limited toxicity data available, but excessive intake can lead to toxicity."),
+    (51, "Antimony: Toxic in high concentrations, can cause gastrointestinal issues."),
+    (52, "Tellurium: Limited toxicity data available, but excessive intake may cause neurological issues."),
+    (53, "Iodine: Essential for thyroid function, but excessive intake can lead to thyroid disorders."),
+    (54, "Xenon: Limited toxicity data available, but generally non-toxic."),
+    (55, "Cesium: Limited toxicity data available, but excessive intake may affect heart function."),
+    (56, "Barium: Toxic in high concentrations, can cause gastrointestinal issues."),
+    (57, "Lanthanum: Limited toxicity data available, but likely low toxicity."),
+    (58, "Cerium: Limited toxicity data available, but likely low toxicity."),
+    (59, "Praseodymium: Limited toxicity data available, but likely low toxicity."),
+    (60, "Neodymium: Limited toxicity data available, but likely low toxicity."),
+    (61, "Promethium: Limited toxicity data available, but likely low toxicity."),
+    (62, "Samarium: Limited toxicity data available, but likely low toxicity."),
+    (63, "Europium: Limited toxicity data available, but likely low toxicity."),
+    (64, "Gadolinium: Limited toxicity data available, but likely low toxicity."),
+    (65, "Terbium: Limited toxicity data available, but likely low toxicity."),
+    (66, "Dysprosium: Limited toxicity data available, but likely low toxicity."),
+    (67, "Holmium: Limited toxicity data available, but likely low toxicity."),
+    (68, "Erbium: Limited toxicity data available, but likely low toxicity."),
+    (69, "Thulium: Limited toxicity data available, but likely low toxicity."),
+    (70, "Ytterbium: Limited toxicity data available, but likely low toxicity."),
+    (71, "Lutetium: Limited toxicity data available, but likely low toxicity."),
+    (72, "Hafnium: Limited toxicity data available, but likely low toxicity."),
+    (73, "Tantalum: Limited toxicity data available, but likely low toxicity."),
+    (74, "Tungsten: Limited toxicity data available, but likely low toxicity."),
+    (75, "Rhenium: Limited toxicity data available, but likely low toxicity."),
+    (76, "Osmium: Limited toxicity data available, but likely low toxicity."),
+    (77, "Iridium: Limited toxicity data available, but likely low toxicity."),
+    (78, "Platinum: Limited toxicity data available, but likely low toxicity."),
+    (79, "Gold: Limited toxicity data available, but likely low toxicity."),
+    (80, "Mercury: Highly toxic, can cause neurological damage and birth defects."),
+    (81, "Thallium: Highly toxic, can cause neurological damage and organ failure."),
+    (82, "Lead: Highly toxic, can cause neurological damage, developmental issues, and organ failure."),
+    (83, "Bismuth: Limited toxicity data available, but likely low toxicity."),
+    (84, "Polonium: Highly radioactive, poses severe health risks."),
+    (85, "Astatine: Highly radioactive, poses severe health risks."),
+    (86, "Radon: Highly radioactive, poses severe health risks."),
+    (87, "Francium: Highly radioactive, poses severe health risks."),
+    (88, "Radium: Highly radioactive, poses severe health risks."),
+    (89, "Actinium: Highly radioactive, poses severe health risks."),
+    (90, "Thorium: Radioactive, poses health risks."),
+    (91, "Protactinium: Radioactive, poses health risks."),
+    (92, "Uranium: Radioactive, poses health risks."),
+    (93, "Neptunium: Radioactive, poses health risks."),
+    (94, "Plutonium: Radioactive, poses health risks."),
+    (95, "Americium: Radioactive, poses health risks."),
+    (96, "Curium: Radioactive, poses health risks."),
+    (97, "Berkelium: Radioactive, poses health risks."),
+    (98, "Californium: Radioactive, poses health risks."),
+    (99, "Einsteinium: Radioactive, poses health risks."),
+    (100, "Fermium: Radioactive, poses health risks."),
+    (101, "Mendelevium: Radioactive, poses health risks."),
+    (102, "Nobelium: Radioactive, poses health risks."),
+    (103, "Lawrencium: Radioactive, poses health risks."),
+    (104, "Rutherfordium: Radioactive, poses health risks."),
+    (105, "Dubnium: Radioactive, poses health risks."),
+    (106, "Seaborgium: Radioactive, poses health risks."),
+    (107, "Bohrium: Radioactive, poses health risks."),
+    (108, "Hassium: Radioactive, poses health risks."),
+    (109, "Meitnerium: Radioactive, poses health risks."),
+    (110, "Darmstadtium: Radioactive, poses health risks."),
+    (111, "Roentgenium: Radioactive, poses health risks."),
+    (112, "Copernicium: Radioactive, poses health risks."),
+    (113, "Nihonium: Radioactive, poses health risks."),
+    (114, "Flerovium: Radioactive, poses health risks."),
+    (115, "Moscovium: Radioactive, poses health risks."),
+    (116, "Livermorium: Radioactive, poses health risks."),
+    (117, "Tennessine: Radioactive, poses health risks."),
+    (118, "Oganesson: Radioactive, poses health risks.")
+]
+
+
+
+#abundance locations
+# Example list for a few elements, showing countries known for their production or abundance
+top_countries_elements_found = [
+    ("Hydrogen", ["United States", "China", "European Union"]),
+    ("Helium", ["United States", "Qatar", "Russia"]),
+    ("Lithium", ["Australia", "Chile", "Argentina"]),
+    ("Oxygen", ["United States", "China", "Russia"]),
+    ("Iron", ["Australia", "Brazil", "China"]),
+    ("Aluminum", ["China", "Russia", "Canada"]),
+    ("Carbon", ["China", "United States", "India"]),
+    ("Gold", ["China", "Australia", "Russia"]),
+    ("Silver", ["Mexico", "Peru", "China"]),
+    # Add more elements as needed
+]
+
+top_countries_elements_found += [
+    ("Copper", ["Chile", "Peru", "China"]),
+    ("Lead", ["China", "Australia", "United States"]),
+    ("Zinc", ["China", "Australia", "Peru"]),
+    ("Nickel", ["Indonesia", "Philippines", "Russia"]),
+    ("Tin", ["China", "Indonesia", "Myanmar"]),
+    ("Uranium", ["Kazakhstan", "Canada", "Australia"]),
+    ("Platinum", ["South Africa", "Russia", "Zimbabwe"]),
+    ("Titanium", ["China", "Australia", "India"]),
+    ("Rare Earth Elements", ["China", "United States", "Australia"]),
+    ("Phosphorus", ["China", "United States", "Morocco"]),
+    ("Sulfur", ["United States", "Canada", "Russia"]),
+    ("Boron", ["Turkey", "United States", "China"]),
+    ("Potassium", ["Canada", "Belarus", "Russia"]),
+    ("Calcium", ["China", "United States", "Russia"]),
+    ("Magnesium", ["China", "Russia", "Brazil"]),
+    ("Sodium", ["China", "United States", "India"]),
+    ("Chlorine", ["United States", "China", "Germany"]),
+    ("Fluorine", ["China", "United States", "India"]),
+    # Add more elements as needed
+]
+
+top_countries_elements_found += [
+    ("Nitrogen", ["United States", "China", "Russia"]),
+    ("Argon", ["United States", "China", "Russia"]),
+    ("Neon", ["United States", "China", "Russia"]),
+    ("Krypton", ["United States", "China", "Russia"]),
+    ("Xenon", ["United States", "China", "Russia"]),
+    ("Radon", ["United States", "China", "Russia"]),
+    ("Fluorine", ["China", "United States", "India"]),
+    ("Chlorine", ["United States", "China", "Germany"]),
+    ("Bromine", ["United States", "China", "Israel"]),
+    ("Iodine", ["Japan", "United States", "China"]),
+    ("Astatine", ["France", "Germany", "Russia"]),
+    ("Tennessine", ["United States", "Russia", "Germany"]),
+    ("Oganesson", ["United States", "Russia", "Germany"]),
+    # Add more elements as needed
+]
+
+top_countries_elements_found += [
+    ("Hydrogen", ["United States", "China", "European Union"]),
+    ("Helium", ["United States", "Qatar", "Russia"]),
+    ("Lithium", ["Australia", "Chile", "Argentina"]),
+    ("Beryllium", ["United States", "China", "Brazil"]),
+    ("Boron", ["Turkey", "United States", "China"]),
+    ("Carbon", ["China", "United States", "India"]),
+    ("Nitrogen", ["United States", "China", "Russia"]),
+    ("Oxygen", ["United States", "China", "Russia"]),
+    ("Fluorine", ["China", "United States", "India"]),
+    ("Neon", ["United States", "China", "Russia"]),
+    ("Sodium", ["China", "United States", "India"]),
+    ("Magnesium", ["China", "Russia", "Brazil"]),
+    ("Aluminum", ["China", "Russia", "Canada"]),
+    ("Silicon", ["China", "Russia", "United States"]),
+    ("Phosphorus", ["China", "United States", "Morocco"]),
+    ("Sulfur", ["United States", "Canada", "Russia"]),
+    ("Chlorine", ["United States", "China", "Germany"]),
+    ("Argon", ["United States", "China", "Russia"]),
+    ("Potassium", ["Canada", "Belarus", "Russia"]),
+    ("Calcium", ["China", "United States", "Russia"]),
+    # Add more elements as needed
+]
+
+'''
+Hydrogen: United States, China, Russia
+Helium: United States, Qatar, Algeria
+Lithium: Australia, Chile, China
+Beryllium: United States, China, Mozambique
+Boron: Turkey, United States, Argentina
+Carbon: China, United States, Russia
+Nitrogen: United States, Russia, China
+Oxygen: United States, Russia, China
+Fluorine: China, United States, Russia
+Neon: Russia, China, United States
+Sodium: China, United States, Russia
+Magnesium: China, Russia, Brazil
+Aluminium: China, Russia, India
+Silicon: China, Russia, United States
+Phosphorus: China, United States, Russia
+Sulfur: United States, Russia, Canada
+Chlorine: China, United States, Russia
+Argon: China, United States, Russia
+Potassium: Russia, Canada, Belarus
+Calcium: China, Russia, United States
+Scandium: China, Russia, Kazakhstan
+
+Titanium: Australia, South Africa, Canada
+
+Vanadium: China, Russia, South Africa
+
+Chromium: South Africa, Kazakhstan, India
+
+Manganese: South Africa, China, Australia
+
+Iron: China, Australia, Brazil
+
+Cobalt: Democratic Republic of Congo, China, Russia
+
+Nickel: Indonesia, Philippines, Russia
+
+Copper: Chile, Peru, China
+
+Zinc: China, Peru, Australia
+
+Gallium: China, Germany, Kazakhstan
+
+Germanium: China, Russia, United States
+
+Arsenic: China, Chile, Russia
+
+Selenium: China, Japan, Russia
+
+Bromine: Israel, United States, China
+
+Krypton: Russia, China, United States
+
+Rubidium: Canada, Russia, Zimbabwe
+
+Strontium: China, Spain, Mexico
+
+Yttrium: China, Russia, United States
+
+Zirconium: Australia, South Africa, China
+
+Niobium (Columbium): Brazil, Canada, Nigeria
+
+Molybdenum: China, United States, Chile
+
+Technetium: Synthetic (Produced in nuclear reactors)
+
+Ruthenium: Russia, South Africa, Canada
+
+Rhodium: South Africa, Russia, Canada
+
+Palladium: Russia, South Africa, Canada
+
+Silver: Mexico, Peru, China
+
+Cadmium: South Korea, China, Japan
+
+Indium: China, South Korea, Japan
+
+Tin: China, Indonesia, Peru
+
+Antimony: China, Russia, Tajikistan
+
+Tellurium: China, United States, Canada
+
+Iodine: Chile, Japan, United States
+
+Xenon: Russia, United States, China
+
+Cesium: Canada, Zimbabwe, China
+
+Barium: China, India, Morocco
+
+Lanthanum: China, Australia, United States
+
+Cerium: China, Australia, United States
+
+Praseodymium: China, Brazil, Russia
+
+Neodymium: China, Brazil, United States
+
+Promethium: Synthetic (Produced in nuclear reactors)
+
+Samarium: China, Brazil, India
+
+Europium: China, Brazil, France
+
+Gadolinium: China, Russia, Australia
+
+Terbium: China, United States, Brazil
+
+Dysprosium: China, Australia, United States
+
+Holmium: China, United States, Brazil
+
+Erbium: China, United States, Australia
+
+Thulium: China, United States, Brazil
+
+Ytterbium: China, United States, Russia
+
+Lutetium: Australia, Russia, United States
+
+Hafnium: Australia, South Africa, China
+
+Tantalum: Australia, Brazil, Rwanda
+
+Tungsten: China, Russia, United States
+
+Rhenium: Chile, Kazakhstan, United States
+
+Osmium: Russia, South Africa, Canada
+
+Iridium: South Africa, Russia, Canada
+
+Platinum: South Africa, Russia, Zimbabwe
+
+Gold: China, Australia, Russia
+
+Mercury: China, Kyrgyzstan, United States
+
+Thallium: China, Kazakhstan, Russia
+
+Lead: China, Australia, United States
+
+Bismuth: China, Peru, Mexico
+
+Polonium: Russia, United States, China
+
+Astatine: Synthetic (Produced in nuclear reactors)
+
+Radon: Russia, United States, Canada
+
+Francium: Synthetic (Produced in minute quantities, highly radioactive)
+
+Radium: Canada, Australia, Kazakhstan
+
+Actinium: Synthetic (Produced in minute quantities, highly radioactive)
+
+Thorium: Australia, United States, India
+
+Protactinium: Synthetic (Produced in minute quantities, highly radioactive)
+
+Uranium: Kazakhstan, Canada, Australia
+
+Neptunium: Synthetic (Produced in nuclear reactors)
+
+Plutonium: Synthetic (Produced in nuclear reactors)
+
+Americium: Synthetic (Produced in nuclear reactors)
+
+Curium: Synthetic (Produced in nuclear reactors)
+
+Berkelium: Synthetic (Produced in nuclear reactors)
+
+Californium: Synthetic (Produced in nuclear reactors)
+
+Einsteinium: Synthetic (Produced in nuclear reactors)
+
+Fermium: Synthetic (Produced in nuclear reactors)
+
+Mendelevium: Synthetic (Produced in nuclear reactors)
+
+Nobelium: Synthetic (Produced in nuclear reactors)
+
+Lawrencium: Synthetic (Produced in nuclear reactors)
+
+Rutherfordium: Synthetic (Produced in nuclear reactors)
+
+Dubnium: Synthetic (Produced in nuclear reactors)
+
+Seaborgium: Synthetic (Produced in nuclear reactors)
+
+Bohrium: Synthetic (Produced in nuclear reactors)
+
+Hassium: Synthetic (Produced in nuclear reactors)
+
+Meitnerium: Synthetic (Produced in nuclear reactors)
+
+Darmstadtium: Synthetic (Produced in nuclear reactors)
+
+Roentgenium: Synthetic (Produced in nuclear reactors)
+
+Copernicium: Synthetic (Produced in nuclear reactors)
+
+Nihonium: Synthetic (Produced in nuclear reactors)
+
+Flerovium: Synthetic (Produced in nuclear reactors)
+
+Moscovium: Synthetic (Produced in nuclear reactors)
+
+Livermorium: Synthetic (Produced in nuclear reactors)
+
+Tennessine: Synthetic (Produced in nuclear reactors)
+
+Oganesson: Synthetic (Produced in nuclear reactors)
+
+'''
